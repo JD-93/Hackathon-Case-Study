@@ -14,7 +14,7 @@ vector <courses> vect_cou ;
 vector <courses> get_obj_course()
 {
 	ifstream in ;
-		in.open("") ;
+		in.open("courses.csv") ;
 
 		courses s ;
 		string line ;

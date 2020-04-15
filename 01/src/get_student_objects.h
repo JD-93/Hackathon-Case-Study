@@ -52,14 +52,14 @@ vector <students>  get_obj()
 
 		getline(ss,temp,',') ;
 		no = stoi(temp) ;
-		s.setAllocPref(no) ;
+		s.setAllocPref(0) ;
 
 
 		getline(ss,temp,',') ;
 		s.setAllocCourse(temp) ;
 
 		getline(ss,temp,',') ;
-		s.setAllocCentId(temp) ;
+		s.setAllocCentId(0) ;
 
 		getline(ss,temp,',') ;
 		no = stoi(temp) ;

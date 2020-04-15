@@ -14,7 +14,10 @@ using namespace std;
 #include "get_ob_centers.h"
 #include "courses.h"
 #include "get_course_obj.h"
-
+#include "preferences.h"
+#include "get_pref_obj.h"
+#include "counterforseats.h"
+#include "get_course_inst_obj.h"
 int main() {
 
 	vector <students> vect_student ;
@@ -106,13 +109,8 @@ int main() {
 
 						case round_1 :
 						{
-							for (int i=0 ; i<vect_student.size(); i++ ){
 
 
-
-
-
-							}
 						}
 							break ;
 
@@ -134,13 +132,11 @@ int main() {
 
 
 
-/*
 
 
 		for (int i=0 ; i<vect_student.size() ; i++ ){
 			vect_student[i].display() ;
 		}
-*/
 
 
 

@@ -13,7 +13,7 @@ vector <Center> vect_c ;
 vector <Center> get_obj_centers()
 {
 	ifstream in ;
-		in.open("") ;
+		in.open("centers.csv") ;
 
 		Center s ;
 		string line ;
