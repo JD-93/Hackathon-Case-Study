@@ -47,6 +47,8 @@ public:
 	void setRankB(int rankB);
 	int getRankC() const;
 	void setRankC(int rankC);
+
+	void display() ;
 };
 
 #endif /* STUDENTS_H_ */

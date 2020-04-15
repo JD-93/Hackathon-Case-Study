@@ -121,3 +121,41 @@ students::~students() {
 	// TODO Auto-generated destructor stub
 }
 
+void students::display() {
+	cout<<"Here is student details : "<<endl ;
+	cout<<"form no : "<<this->getFormNo()<<endl ;
+	cout<<"name : "<<this->getName() <<endl ;
+	cout<<"rank A : "<<this->getRankA() <<endl ;
+	cout<<"rank B : "<<this->getRankB() <<endl ;
+	cout<<"rank C : "<<this->getRankC() <<endl ;
+	cout<<"degree : "<<this->getDegree() <<endl ;
+	cout<<"degree marks : "<<this->getPercentage()<<endl ;
+	cout<<"allocated pref : "<<this->getAllocPref() <<endl ;
+	cout<<"allocated course : "<<this->getAllocCourse() <<endl ;
+	cout<<"alloc cent id : "<<this->getAllocCentId() <<endl ;
+	cout<<"payment status: "<<this->getPayment() <<endl ;
+	cout<<"repoeted : "<<this->getIsReported() <<endl ;
+	cout<<"PRN : "<<this->getPrn() <<endl ;
+	cout<<"\n"<<endl ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

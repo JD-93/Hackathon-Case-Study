@@ -6,10 +6,10 @@
  */
 
 #include "Center.h"
-
+#include <cstring>
 Center::Center() {
 	// TODO Auto-generated constructor stub
-
+	memset(this,NULL,sizeof(Center)) ;
 }
 
 const string& Center::getAddress() const {

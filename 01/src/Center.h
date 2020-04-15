@@ -11,6 +11,7 @@ class Center {
 public:
 	Center();
 	~Center();
+
 	const string& getAddress() const;
 	void setAddress(const string &address);
 	const string& getCoordinator() const;

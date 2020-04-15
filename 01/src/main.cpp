@@ -10,12 +10,33 @@ using namespace std;
 #include <vector>
 #include <algorithm>
 #include <iomanip>
+#include "get_student_objects.h"
+#include "get_ob_centers.h"
+#include "courses.h"
+#include "get_course_obj.h"
+
 int main() {
 
-	int choice,admin_choice ;
 	vector <students> vect_student ;
-	vector <Center> vect_center ;
+	vect_student = get_obj() ;
 
+	struct less_than_key
+	{
+	    inline bool operator() (const students& struct1, const students& struct2)
+	    {
+	        return (struct1.getRankB() < struct2.getRankB());
+	    }
+	};
+	sort(vect_student.begin(),vect_student.end(),less_than_key()) ;
+
+
+	vector <Center> vect_center ;
+	vect_center = get_obj_centers() ;
+
+	vector <courses> vect_course ;
+	vect_course = get_obj_course() ;
+
+	int choice,admin_choice ;
 		while ((choice=menuoperation())!= EXIT ){
 
 		switch (choice) {
@@ -32,25 +53,12 @@ int main() {
 
 						case list_stu :
 						{
-							ifstream in ;
-							in.open("students.csv") ;
-
-							students s ;
-							string line ;
-
-							while(getline(in,line)){
-								stringstream ss(line) ;
-								string form ;
-								getline(ss,form,',') ;
-								int no = stoi(form) ;
-								string name ;
-								getline(ss,name,',') ;
-								s.setFormNo(no) ;
-								s.setName(name) ;
-								cout<<no<<"\t"<<name<<endl ;
-								vect_student.push_back(s) ;
+							for (int i=0 ; i<vect_student.size(); i++ ){
+								cout<<vect_student[i].getFormNo()<<"\t\t" ;
+								cout<<vect_student[i].getName() <<"\t\t";
+								cout<<vect_student[i].getRankB()<<endl ;
 							}
-							in.close() ;						}
+						}
 							break ;
 
 						case list_course :
@@ -96,6 +104,18 @@ int main() {
 						}
 						break ;
 
+						case round_1 :
+						{
+							for (int i=0 ; i<vect_student.size(); i++ ){
+
+
+
+
+
+							}
+						}
+							break ;
+
 						default:
 							cerr<<"\n\nEnter valid choice for admin menu ... "<<endl ;
 							break;
@@ -110,18 +130,24 @@ int main() {
 				cerr<<"\n\nEnter valid choice...\n"<<endl ;
 				break;
 		}
-	}
+		}
 
-		/*
+
+
+/*
+
 
 		for (int i=0 ; i<vect_student.size() ; i++ ){
-			cout<<vect_student[i].getName()<<"\t"<<vect_student[i].getFormNo()<<vect_student[i].getAllocCourse()<<endl ;
+			vect_student[i].display() ;
 		}
 */
+
+
 
 
 	cout<<"\n\n\nTHANKS FOR USING PROGRAM"<<endl ;
 	cout<<"========================"<<endl ;
 	return 0;
+
 }
 
