@@ -54,3 +54,18 @@ void preferences::display() {
 	cout<<"center id : "<<this->getCenterId()<<endl ;
 	cout<<"\n"<<endl ;
 }
+
+void preferences::accept() {
+	cout<<"Enter  prefrence : "<<endl ;
+	cout<<"Enter form no : " ;
+	cin>>this->form_no ;
+
+	cout<<"Enter pref no : ";
+	cin>>pref_no ;
+
+	cout<<"Enter course name : ";
+	cin>>course_name ;
+
+	cout<<"center id : ";
+	cin>>center_id ;
+}

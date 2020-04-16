@@ -43,14 +43,8 @@ public:
 	void setReportCenter(const string &reportCenter);
 
 	void display() ;
-/*
-	bool  operator < (students &s)
-	{
-		if (this->rank_A < s.rank_A)
-			return true ;
-		else
-			return false ;
-	}*/
+	void accept() ;
+
 };
 
 #endif /* STUDENTS_H_ */

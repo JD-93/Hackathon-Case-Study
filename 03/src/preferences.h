@@ -21,6 +21,7 @@ public:
 	void setPrefNo(const string &prefNo);
 
 	void display() ;
+	void accept() ;
 
 };
 

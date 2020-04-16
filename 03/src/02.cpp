@@ -29,6 +29,7 @@ vector<preferences> pref = get_prefrences_obj() ;
 
 #include "round_1_csv_creator.h"
 #include "round_2_csv_creator.h"
+#include "final_csv_creator.h"
 int main()
 {
 	int choice ;
@@ -37,17 +38,29 @@ int main()
 		switch (choice) {
 			case Student:
 			{
-				cout<<"Log in as student : \n" ;
-				string formno,name ;
-				cout<<"\nform no : ";
-				cin>>formno ;
-				cout<<"name : " ;
-				cin>>name ;
-				for(size_t i=0 ; i<stu.size() ; i++ ){
-					if ((stu[i].getFormNo()==formno)&&(stu[i].getName()==name)){
+				cout<<"New user  OR  Existing user   (N/E) " ;
+				char ch ;
+				cin>>ch ;
+				if ((ch=='N')||(ch=='n')){
 
-						while((choice = student_menu())!= Exit3){
-							switch (choice) {
+					students obj ;
+					obj.accept() ;
+					//obj.display() ;
+					stu.push_back(obj) ;
+				}
+				else
+				{
+					cout<<"Log in as student : \n" ;
+					string formno,name ;
+					cout<<"\nform no : ";
+					cin>>formno ;
+					cout<<"name : " ;
+					cin>>name ;
+					for(size_t i=0 ; i<stu.size() ; i++ ){
+						if ((stu[i].getFormNo()==formno)&&(stu[i].getName()==name)){
+
+							while((choice = student_menu())!= Exit3){
+								switch (choice) {
 								case list_courses_as_per_eligi:
 								{
 									for (size_t j=0 ; j<eligiblities.size();j++ ){
@@ -56,7 +69,7 @@ int main()
 										}
 									}
 								}
-									break;
+								break;
 
 								case list_center_addr:
 								{
@@ -94,20 +107,35 @@ int main()
 										stu[i].setPayment("11800") ;
 									}
 								}
+								break ;
+
+								case give_pref :
+								{
+									preferences p ;
+									p.accept() ;
+									p.display() ;
+
+									for (size_t z=0 ; z < eligiblities.size(); z++ ){
+										if (p.getCourseName()==eligiblities[z].getCourse()){
+											if (eligiblities[z].getEligibilitys()==stu[i].getDegree()){
+												cout<<"OK" ;
+												pref.push_back(p) ;
+											}
+										}
+									}
+								}
 									break ;
+
 								default:
 									break;
+								}
 							}
-
-
-
 						}
-
-
 					}
+
 				}
 			}
-				break;
+			break;
 
 			case Admin :
 			{	cout<<"Log in as Admin : \n" ;
@@ -190,8 +218,7 @@ int main()
 						}
 						break ;
 
-						default:
-							break;
+
 
 						case update_rank :
 						{
@@ -216,23 +243,63 @@ int main()
 							}
 						}
 						break ;
+
+						case list_reported :
+						{
+							for (size_t y=0 ; y<stu.size() ; y++ ){
+								if (stu[y].getReportCenter() == "REPORTED"){
+									cout<<stu[y].getName()<<"\t\t"
+											<<stu[y].getAllocCentId()<<"\t\t"
+											<<stu[y].getAllocCourse()<<"\t\t"
+											<<stu[y].getReportCenter()<<endl ;
+								}
+							}
+						}
+						break ;
+
+						case generate_PRN :
+						{
+							for (size_t m=0 ; m<stu.size() ; m++ ){
+								if (stu[m].getReportCenter() == "REPORTED"){
+									int temp = rand() ;
+									stu[m].setPrn(to_string(temp)) ;
+								}
+							}
+							cout<<"\nPRN generated sucessfully\n"<<endl ;
+						}
+						break ;
+
+						case lis_all_PRN :
+						{
+							for (size_t n=0 ; n<stu.size() ; n++ ){
+								if (stu[n].getPrn() != "NA"){
+									if (stu[n].getPrn() != "NULL"){
+									cout<<stu[n].getFormNo()<<"\t\t"
+											<<stu[n].getName()<<"\t\t"
+											<<stu[n].getPrn()<<endl ;
+									}
+								}
+							}
+						}
+						break ;
 					}
 				}
 
 			}else
 				cout<<"Invalid ID password"<<endl ;
 			}
-
 				break ;
+
+
 
 			case Center_coordinator :
 			{	cout<<"Log in as center coordinator : \n" ;
-				string username1,fname,lname ;
-				cout<<"first name : " ;
-				cin>>fname ;
-				cout<<"last name :" ;
-				cin>>lname ;
-				username1=fname+" "+lname ;
+				cout<<"coordinator name : " ;
+				char degrees[20] ;
+				scanf(" %[^\n]s",&degrees);
+				string username1(degrees) ;
+
+
 				string password1 ;
 				cout<<"password : " ;
 				cin>>password1 ;
@@ -244,10 +311,12 @@ int main()
 									{
 										for (size_t j=0 ; j<stu.size() ; j++ ){
 											if (stu[j].getAllocCentId()==center[i].getCenterId()){
+												if (stu[j].getPayment()!= "NOT PAID IN 1st ROUND"){
 												cout<<stu[j].getFormNo() <<"\t\t"
 														<<stu[j].getName()<<"\t\t"
 														<<stu[j].getAllocCourse()<<"\t\t"
 														<<stu[j].getAllocCentId()<<endl ;
+												}
 											}
 										}
 									}
@@ -263,6 +332,33 @@ int main()
 										}
 									}
 									break ;
+
+									case report_status :
+									{
+										for (size_t x=0 ; x<stu.size(); x++) {
+											if (stu[x].getAllocCentId()==center[i].getCenterId()){
+												if (stu[x].getPrn()() != "NOT PAID IN 1st ROUND"){
+												stu[x].setReportCenter("REPORTED") ;
+												}
+											}
+										}
+									}
+									break ;
+
+									case list_PRN :
+									{
+										for (size_t q=0 ; q<stu.size(); q++) {
+											if (stu[q].getAllocCentId()==center[i].getCenterId()){
+												cout<<stu[q].getFormNo()<<"\t\t"
+														<<stu[q].getName()<<"\t\t"
+														<<stu[q].getPrn()<<endl ;
+											}
+
+											}
+
+									}
+									break ;
+
 									default:
 										break;
 								}
@@ -279,8 +375,12 @@ int main()
 				break;
 		}
 	}
+		/* create final csv file for students nad capacities */
+		final_csv_students() ;
+		final_csv_capacity() ;
 
-
-
+	cout<<"\n\n\n\nTHANKS FOR USING PROGRAM"<<endl ;
+	cout<<"========================="<<endl ;
+	return 0 ;         //---> never forget :)
 
 }

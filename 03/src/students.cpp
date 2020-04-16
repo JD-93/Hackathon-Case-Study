@@ -6,9 +6,12 @@
  */
 #include <cstring>
 #include "students.h"
+#include <iostream>
+using namespace std;
+#include <string>
+
 
 students::students() {
-	memset(this,NULL,sizeof(students) ) ;
 	// TODO Auto-generated constructor stub
 
 }
@@ -136,4 +139,39 @@ void students::display() {
 	cout<<"repoeted : "<<this->getReportCenter() <<endl ;
 	cout<<"PRN : "<<this->getPrn() <<endl ;
 	cout<<"\n"<<endl ;
+}
+
+void students::accept() {
+	cout<<"Enter student details : " <<endl ;
+	cout<<"Enter form no : " ;
+	cin>>this->form_no ;
+
+	cout<<"Enter name : ";
+	cin>>this->name ;
+
+	cout<<"Enter rank A :" ;
+	cin>>this->rank_A ;
+
+	cout<<"Enter rank B : " ;
+	cin>>this->rank_B ;
+
+	cout<<"Enter rank C : " ;
+	cin>>this->rank_C ;
+
+	cout<<"Enter degree : " ;
+	char degrees[20] ;
+	scanf(" %[^\n]s",&degrees);
+	string deg(degrees) ;
+	setDegree(deg) ;
+
+	cout<<"Enter percentage : ";
+	cin>>this->percentage ;
+
+	this->alloc_pref = "NA" ;
+	this->alloc_course = "NA" ;
+	this->alloc_cent_id = "NA" ;
+	this->payment = "NA" ;
+	this->report_center = "NA" ;
+	this->prn = "NA" ;
+
 }

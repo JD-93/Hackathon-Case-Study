@@ -13,7 +13,7 @@ enum {EXIT,Student,Admin,Center_coordinator} ;
 int menu_choice()
 {
 	int choice ;
-
+	cout<<endl ;
 	cout<<"0. EXIT"<<endl ;
 	cout<<"1. STUDENT"<<endl ;
 	cout<<"2. ADMIN"<<endl ;

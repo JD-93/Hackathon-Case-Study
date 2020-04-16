@@ -8,7 +8,6 @@
 #include "course.h"
 #include <cstring>
 course::course() {
-	memset(this,NULL,sizeof(course)) ;
 	// TODO Auto-generated constructor stub
 
 }
