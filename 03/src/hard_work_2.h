@@ -1,10 +1,11 @@
 
 
-#ifndef HARD_WORK_H_
-#define HARD_WORK_H_
+#ifndef HARD_WORK_2_H_
+#define HARD_WORK_2_H_
 
 
-void first_round() {
+
+void second_round() {
 
 
 //==================================================================
@@ -30,6 +31,14 @@ void first_round() {
 							int filled = stoi(temp) ;
 							filled-- ;
 							capacities[j].setFilledCapacity(to_string(filled)) ;
+
+/*
+							cout<<"not payment"<<endl ;
+							cout<<stu[i].getFormNo()<<"\t"
+									<<stu[i].getName()<<"\t"
+									<<stu[i].getAllocCentId()<<"\t"
+									<<stu[i].getAllocCourse()<<endl ;
+*/
 						}
 					}
 				}
@@ -47,7 +56,7 @@ while(cycle<6){
 	STU = stu.begin() ;
 	while ((STU != stu.end())) {
 		if (STU->getRankA()!="-1"){
-		if (STU->getAllocCentId()=="NA") {
+		if (STU->getAllocCentId() == "NA") {
 		PREF = pref.begin() ;
 		while(PREF != pref.end()){
 			if (PREF->getPrefNo()==to_string(cycle)){
@@ -149,7 +158,7 @@ while(cycle<6){
 																if (CAPACITY->getFilledCapacity()=="NA")
 																	CAPACITY->setFilledCapacity("0") ;
 																CAPACITY->setFilledCapacity(to_string(1+stoi(CAPACITY->getFilledCapacity()))) ;
-	//															STU->display() ;
+//																STU->display() ;
 															}
 														}
 													}
@@ -247,6 +256,4 @@ while(cycle<6){
 }
 
 
-
-
-#endif /* HARD_WORK_H_ */
+#endif /* HARD_WORK_2_H_ */

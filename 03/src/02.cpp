@@ -25,7 +25,7 @@ vector <capacities> capacities = get_capacity_obj() ;
 vector<eligibility> eligiblities = get_eligibilty_obj() ;
 vector<preferences> pref = get_prefrences_obj() ;
 #include "hard_work.h"
-
+#include "hard_work_2.h"
 int main()
 {
 	int choice ;
@@ -47,7 +47,7 @@ int main()
 							switch (choice) {
 								case list_courses_as_per_eligi:
 								{
-									for (int j=0 ; j<eligiblities.size();j++ ){
+									for (size_t j=0 ; j<eligiblities.size();j++ ){
 										if (eligiblities[j].getEligibilitys()==stu[i].getDegree()){
 											cout<<eligiblities[j].getCourse() <<endl ;
 										}
@@ -64,17 +64,34 @@ int main()
 
 													cout<<eligiblities[k].getCourse()<<"\t\t"<<capacities[l].getCenterId() <<endl ;
 												}
-
 											}
-
-
-
 										}
 									}
-
 								}
 								break ;
 
+								case allocated_center_course :
+								{
+									cout<<"allocated center : "<<stu[i].getAllocCentId()<<"\t\t"
+											<<"allocated course : "<<stu[i].getAllocCourse()<<endl ;
+								}
+								break;
+
+								case payment :
+								{
+									cout<<"allocated center : "<<stu[i].getAllocCentId()<<"\t\t"
+											<<"allocated course : "<<stu[i].getAllocCourse()<<endl ;
+									if (stu[i].getAllocCentId() == "NA")
+									{
+										cout<<"No course alloted" ;
+									}
+									else
+									{
+										cout<<"proceed for payment of rs 11800 is updated \n\n\n";
+										stu[i].setPayment("11800") ;
+									}
+								}
+									break ;
 								default:
 									break;
 							}
@@ -104,18 +121,26 @@ int main()
 							first_round() ;
 							break;
 
+						case allocate_round_2 :
+							second_round() ;
+							break ;
+
 						case list_allocated_stu :
 						{
 							for (size_t i=0 ; i<stu.size() ; i++ ){
 								if (stu[i].getAllocCentId() != "NA"){
+									if (stu[i].getPayment() != "NOT PAID IN 1st ROUND"){
+
+
 									cout<<stu[i].getFormNo()<<"\t"
 									<<stu[i].getName()<<"\t"
 									<<stu[i].getAllocCentId()<<"\t"
 									<<stu[i].getAllocCourse()<<endl ;
+									}
 								}
 							}
 						}
-							break ;
+						break ;
 
 						case list_all_stu :
 						{
