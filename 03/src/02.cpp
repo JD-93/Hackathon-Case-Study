@@ -261,8 +261,10 @@ int main()
 						{
 							for (size_t m=0 ; m<stu.size() ; m++ ){
 								if (stu[m].getReportCenter() == "REPORTED"){
+									if (stu[m].getPayment()!= "NOT PAID IN 1st ROUND"){
 									int temp = rand() ;
 									stu[m].setPrn(to_string(temp)) ;
+									}
 								}
 							}
 							cout<<"\nPRN generated sucessfully\n"<<endl ;
@@ -337,9 +339,8 @@ int main()
 									{
 										for (size_t x=0 ; x<stu.size(); x++) {
 											if (stu[x].getAllocCentId()==center[i].getCenterId()){
-												if (stu[x].getPrn()() != "NOT PAID IN 1st ROUND"){
 												stu[x].setReportCenter("REPORTED") ;
-												}
+
 											}
 										}
 									}
@@ -349,9 +350,11 @@ int main()
 									{
 										for (size_t q=0 ; q<stu.size(); q++) {
 											if (stu[q].getAllocCentId()==center[i].getCenterId()){
+												if (stu[q].getPayment()!= "NOT PAID IN 1st ROUND"){
 												cout<<stu[q].getFormNo()<<"\t\t"
 														<<stu[q].getName()<<"\t\t"
 														<<stu[q].getPrn()<<endl ;
+												}
 											}
 
 											}
