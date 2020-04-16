@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 #include <vector>
 #include "students.h"
@@ -15,308 +16,172 @@ using namespace std;
 #include "preferences.h"
 #include "get_preference_obj.h"
 #include "customized_sortin_and_extra_algo_for_vector.h"
-int main() {
+#include "menu_operation.h"
 
-	vector <students> stu = get_stu_obj() ;
-	vector <course_eli> course  = get_course_obj() ;
-	vector<center> center = get_center_obj() ;
-	vector <capacities> capacities = get_capacity_obj() ;
-	vector<eligibility> eligiblities = get_eligibilty_obj() ;
-	vector<preferences> pref = get_prefrences_obj() ;
+vector <students> stu = get_stu_obj() ;
+vector <course_eli> course  = get_course_obj() ;
+vector<center> center = get_center_obj() ;
+vector <capacities> capacities = get_capacity_obj() ;
+vector<eligibility> eligiblities = get_eligibilty_obj() ;
+vector<preferences> pref = get_prefrences_obj() ;
+#include "hard_work.h"
 
-//==================================================================
-	vector<students>::iterator STU = stu.begin() ;
-	vector<preferences>::iterator PREF = pref.begin() ;
-	vector<capacity_class>::iterator CAPACITY = capacities.begin() ;
-	vector<course_eli>::iterator COURSES = course.begin() ;
-	vector<eligibility>::iterator ELIGIBLE = eligiblities.begin() ;
-//=========================================================================
+int main()
+{
+	int choice ;
+	while((choice=menu_choice())!= EXIT){
+/* you have login as each member as login is start point of flow of case  */
+		switch (choice) {
+			case Student:
+				break;
 
-	// sort by ranking of A
-	sort(stu.begin(),stu.end(),sort_by_A) ;
+			case Admin :
+			{	cerr<<"Log in as Admin : \n" ;
+				string username, password ;
+				cout<<"\nusername : ";
+				cin>>username ;
+				cout<<"password : " ;
+				cin>>password ;
+				if ((username == "admin")&&(password == "admin")){
+					cout<<"Log in access granted : "<<endl ;
+				while((choice=admin_menu())!= Exit1){
+					switch (choice) {
+						case allocate_round_1:
+							first_round() ;
+							break;
 
-	int counter =0 ;
-	int cycle = 1 ;
-
-	STU = stu.begin() ;
-	while ((STU != stu.end())/*&& (STU->getAllocCentId()=="NA")*/) {
-
-		if (STU->getAllocCentId()=="NA") {
-		PREF = pref.begin() ;
-		while(PREF != pref.end()){
-
-			if (PREF->getPrefNo()==to_string(cycle)){
-				if(STU->getFormNo()==PREF->getFormNo()){
-
-					ELIGIBLE = eligiblities.begin() ;
-					while(ELIGIBLE != eligiblities.end()){
-
-						if (ELIGIBLE->getCourse()==PREF->getCourseName()){
-							if (ELIGIBLE->getEligibilitys()==STU->getDegree()){
-
-
-								COURSES = course.begin() ;
-								while(COURSES != course.end()){
-									if (COURSES->getCcatSection()=="A") {
-										if (PREF->getCourseName()==COURSES->getCourseName()){
-
-											CAPACITY = capacities.begin() ;
-											while (CAPACITY != capacities.end()){
-
-												if (PREF->getCenterId()==CAPACITY->getCenterId()){
-													if (PREF->getCourseName()==CAPACITY->getCourseName()){
-
-														if (CAPACITY->getFilledCapacity() != CAPACITY->getMaxCapacity()){
-
-											/*	cout<<"selected course : "<<PREF->getCourseName()<<endl ;
-												cout<<"selected pref : "<<PREF->getPrefNo()<<endl ;
-												cout<<"studnt branch : "<<STU->getDegree()<<endl;
-												cout<<"Eligible banch : "<<ELIGIBLE->getEligibilitys()<<endl ;
-												cout<<"CCAT section : "<<COURSES->getCcatSection()<<endl ;
-												cout<<"ceter id : "<<CAPACITY->getCenterId()<<endl;
-												cout<<"course name : "<<CAPACITY->getCourseName() <<endl;
-												cout<<"\n\n\n\n"<<endl;
-												counter++ ;
-*/
-															STU->setAllocPref(PREF->getPrefNo()) ;
-															STU->setAllocCourse(PREF->getCourseName()) ;
-															STU->setAllocCentId(CAPACITY->getCenterId()) ;
-
-
-															if (CAPACITY->getFilledCapacity()=="NA")
-																CAPACITY->setFilledCapacity("0") ;
-
-
-
-															CAPACITY->setFilledCapacity(to_string(1+stoi(CAPACITY->getFilledCapacity()))) ;
-															STU->display() ;
-
-														}
-													}
-												}
-												CAPACITY++ ;
-											}
-
-										}
-									}
-									COURSES++ ;
+						case list_allocated_stu :
+						{
+							for (size_t i=0 ; i<stu.size() ; i++ ){
+								if (stu[i].getAllocCentId() != "NA"){
+									cout<<stu[i].getFormNo()<<"\t"
+									<<stu[i].getName()<<"\t"
+									<<stu[i].getAllocCentId()<<"\t"
+									<<stu[i].getAllocCourse()<<endl ;
 								}
 							}
 						}
+							break ;
 
-						ELIGIBLE++ ;
-					}
-
-				}
-			}
-			PREF++ ;
-		}
-		STU++ ;
-
-		}
-	}
-
-
-	// sort by ranking of B
-	sort(stu.begin(),stu.end(),sort_by_B) ;
-	cycle = 1 ;
-	counter = 0 ;
-	STU = stu.begin() ;
-	while (STU != stu.end()){
-		if (STU->getRankB() != "-1"){
-			if (STU->getAllocCentId() == "NA" ){
-
-				PREF = pref.begin() ;
-				while(PREF != pref.end()) {
-					if (PREF->getFormNo()==STU->getFormNo()) {
-						if (PREF->getPrefNo() == to_string(cycle)) {
-
-							ELIGIBLE = eligiblities.begin() ;
-							while(ELIGIBLE != eligiblities.end()){
-
-								if (PREF->getCourseName()==ELIGIBLE->getCourse()){
-									if (ELIGIBLE->getEligibilitys()==STU->getDegree()){
-
-										COURSES = course.begin() ;
-										while (COURSES != course.end()){
-											if (COURSES->getCcatSection() == "B"){
-												if (COURSES->getCourseName() == PREF->getCourseName()){
-
-													CAPACITY = capacities.begin() ;
-													while (CAPACITY != capacities.end()) {
-
-														if (CAPACITY->getCenterId() == PREF->getCenterId()) {
-															if (CAPACITY->getCourseName() == PREF->getCourseName()){
-
-																if (CAPACITY->getFilledCapacity() != CAPACITY->getMaxCapacity()){
-
-
-
-
-
-																	cout<<"selected course : "<<PREF->getCourseName()<<endl ;
-																	cout<<"selected pref : "<<PREF->getPrefNo()<<endl ;
-																	cout<<"studnt branch : "<<STU->getDegree()<<endl;
-																	cout<<"Eligible banch : "<<ELIGIBLE->getEligibilitys()<<endl ;
-																	cout<<"CCAT section : "<<COURSES->getCcatSection()<<endl ;
-																	cout<<"ceter id : "<<CAPACITY->getCenterId()<<endl;
-																	cout<<"course name : "<<CAPACITY->getCourseName() <<endl;
-																	cout<<"\n\n\n\n"<<endl;
-																	counter++ ;
-
-																	STU->setAllocPref(PREF->getPrefNo()) ;
-																	STU->setAllocCourse(PREF->getCourseName()) ;
-																	STU->setAllocCentId(CAPACITY->getCenterId()) ;
-
-
-																	if (CAPACITY->getFilledCapacity()=="NA")
-																		CAPACITY->setFilledCapacity("0") ;
-
-
-
-																	CAPACITY->setFilledCapacity(to_string(1+stoi(CAPACITY->getFilledCapacity()))) ;
-																	STU->display() ;
-
-
-
-
-
-																}
-															}
-														}
-													CAPACITY++ ;
-
-													}
-
-												}
-											}
-										COURSES++ ;
-										}
-									}
-								}
-								ELIGIBLE++ ;
+						case list_all_stu :
+						{
+							for (size_t i=0 ; i<stu.size() ; i++ ){
+									cout<<stu[i].getFormNo()<<"\t"
+											<<stu[i].getName()<<endl ;
 							}
 						}
-					}
-					PREF++ ;
-				}
-			}
-		}
+							break ;
 
-
-		STU++ ;
-	}
-
-
-/// for section C
-
-	// sort by ranking of C
-	sort(stu.begin(),stu.end(),sort_by_C) ;
-	cycle = 1 ;
-	counter = 0 ;
-	STU = stu.begin() ;
-	while (STU != stu.end()){
-		if (STU->getRankB() != "-1"){
-			if (STU->getAllocCentId() == "NA" ){
-
-				PREF = pref.begin() ;
-				while(PREF != pref.end()) {
-					if (PREF->getFormNo()==STU->getFormNo()) {
-						if (PREF->getPrefNo() == to_string(cycle)) {
-
-							ELIGIBLE = eligiblities.begin() ;
-							while(ELIGIBLE != eligiblities.end()){
-
-								if (PREF->getCourseName()==ELIGIBLE->getCourse()){
-									if (ELIGIBLE->getEligibilitys()==STU->getDegree()){
-
-										COURSES = course.begin() ;
-										while (COURSES != course.end()){
-											if (COURSES->getCcatSection() == "C"){
-												if (COURSES->getCourseName() == PREF->getCourseName()){
-
-													CAPACITY = capacities.begin() ;
-													while (CAPACITY != capacities.end()) {
-
-														if (CAPACITY->getCenterId() == PREF->getCenterId()) {
-															if (CAPACITY->getCourseName() == PREF->getCourseName()){
-
-																if (CAPACITY->getFilledCapacity() != CAPACITY->getMaxCapacity()){
-
-
-
-
-
-																	cout<<"selected course : "<<PREF->getCourseName()<<endl ;
-																	cout<<"selected pref : "<<PREF->getPrefNo()<<endl ;
-																	cout<<"studnt branch : "<<STU->getDegree()<<endl;
-																	cout<<"Eligible banch : "<<ELIGIBLE->getEligibilitys()<<endl ;
-																	cout<<"CCAT section : "<<COURSES->getCcatSection()<<endl ;
-																	cout<<"ceter id : "<<CAPACITY->getCenterId()<<endl;
-																	cout<<"course name : "<<CAPACITY->getCourseName() <<endl;
-																	cout<<"\n\n\n\n"<<endl;
-																	counter++ ;
-
-																	STU->setAllocPref(PREF->getPrefNo()) ;
-																	STU->setAllocCourse(PREF->getCourseName()) ;
-																	STU->setAllocCentId(CAPACITY->getCenterId()) ;
-
-
-																	if (CAPACITY->getFilledCapacity()=="NA")
-																		CAPACITY->setFilledCapacity("0") ;
-
-
-
-																	CAPACITY->setFilledCapacity(to_string(1+stoi(CAPACITY->getFilledCapacity()))) ;
-																	STU->display() ;
-
-
-
-
-
-																}
-															}
-														}
-													CAPACITY++ ;
-
-													}
-
-												}
-											}
-										COURSES++ ;
-										}
-									}
-								}
-								ELIGIBLE++ ;
+						case list_course_eligibility :
+						{
+							for (size_t i=0 ; i<eligiblities.size() ; i++ ){
+								cout<<eligiblities[i].getCourse()<<"\t\t"
+										<<eligiblities[i].getEligibilitys()<<endl ;
 							}
 						}
+						break ;
+
+						case list_center_capacity:
+						{
+							for (size_t i=0 ; i<capacities.size() ; i++ ){
+								cout<<capacities[i].getCenterId()<<"\t\t"
+										<<capacities[i].getCourseName()<<"\t\t"
+										<<capacities[i].getMaxCapacity()<<endl ;
+							}
+						}
+						break ;
+
+						default:
+							break;
+
+						case update_rank :
+						{
+							cout<<"Enter form no : " ;
+							string frm_no ;
+							cin>>frm_no ;
+							for (size_t i=0 ; i<stu.size() ; i++ ){
+								if (stu[i].getFormNo()==frm_no){
+									stu[i].display() ;
+									string rankA, rankB, rankC ;
+									cout<<"Enter rank A to change : " ;
+									cin>>rankA ;
+									cout<<"Enter rank B to change : " ;
+									cin>>rankB ;
+									cout<<"Enter rank A to change : " ;
+									cin>>rankB ;
+									stu[i].setRankA(rankA) ;
+									stu[i].setRankB(rankB) ;
+									stu[i].setRankC(rankC) ;
+									stu[i].display() ;
+								}
+							}
+						}
+						break ;
 					}
-					PREF++ ;
 				}
+
+			}else
+				cout<<"Invalid ID password"<<endl ;
 			}
+
+				break ;
+
+			case Center_coordinator :
+			{	cout<<"Log in as center coordinator : \n" ;
+				string username1,fname,lname ;
+				cout<<"first name : " ;
+				cin>>fname ;
+				cout<<"last name :" ;
+				cin>>lname ;
+				username1=fname+" "+lname ;
+				string password1 ;
+				cout<<"password : " ;
+				cin>>password1 ;
+				for (size_t i=0 ; i<center.size() ; i++ ){
+					if ((username1==center[i].getCoordinator())&&(password1==center[i].getPassword())){
+							while((choice=center_cordinator_menu())!= Exit2){
+								switch (choice) {
+									case list_student:
+									{
+										for (size_t j=0 ; j<stu.size() ; j++ ){
+											if (stu[j].getAllocCentId()==center[i].getCenterId()){
+												cout<<stu[j].getFormNo() <<"\t\t"
+														<<stu[j].getName()<<"\t\t"
+														<<stu[j].getAllocCourse()<<"\t\t"
+														<<stu[j].getAllocCentId()<<endl ;
+											}
+										}
+									}
+										break;
+
+									case list_course :
+									{
+										for (size_t k=0 ; k<capacities.size(); k++ ){
+											if (capacities[k].getCenterId() == center[i].getCenterId()){
+												cout<<capacities[k].getCourseName()<<endl ;
+
+											}
+										}
+									}
+									break ;
+									default:
+										break;
+								}
+							}
+							}
+					}
+				}
+
+
+				break ;
+
+
+			default:
+				break;
 		}
-
-
-		STU++ ;
 	}
 
 
 
 
-
-		for (size_t i=0 ; i<stu.size(); i++ ){
-			if (stu[i].getAllocCentId() != "NA"){
-				stu[i].display() ;
-				counter++ ;
-			}
-		}
-
-		for (size_t i= 0 ; i<capacities.size(); i++ ){
-				capacities[i].display() ;
-			}
-
-
-
-cout<<"\n\n\ncount is "<<counter <<endl ;
-	return 0 ;
 }
