@@ -3,6 +3,7 @@
 using namespace std;
 #include "admin_menu.h"
 #include "ceter_coordinator_menu.h"
+#include "student_menu.h"
 
 #ifndef MENU_OPERATION_H_
 #define MENU_OPERATION_H_

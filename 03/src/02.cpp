@@ -33,10 +33,64 @@ int main()
 /* you have login as each member as login is start point of flow of case  */
 		switch (choice) {
 			case Student:
+			{
+				cout<<"Log in as student : \n" ;
+				string formno,name ;
+				cout<<"\nform no : ";
+				cin>>formno ;
+				cout<<"name : " ;
+				cin>>name ;
+				for(size_t i=0 ; i<stu.size() ; i++ ){
+					if ((stu[i].getFormNo()==formno)&&(stu[i].getName()==name)){
+
+						while((choice = student_menu())!= Exit3){
+							switch (choice) {
+								case list_courses_as_per_eligi:
+								{
+									for (int j=0 ; j<eligiblities.size();j++ ){
+										if (eligiblities[j].getEligibilitys()==stu[i].getDegree()){
+											cout<<eligiblities[j].getCourse() <<endl ;
+										}
+									}
+								}
+									break;
+
+								case list_center_addr:
+								{
+									for (size_t k=0 ; k<eligiblities.size();k++ ){
+										if (eligiblities[k].getEligibilitys()==stu[i].getDegree()){
+											for (size_t l=0 ; l<capacities.size(); l++ ){
+												if (capacities[l].getCourseName()==eligiblities[k].getCourse()){
+
+													cout<<eligiblities[k].getCourse()<<"\t\t"<<capacities[l].getCenterId() <<endl ;
+												}
+
+											}
+
+
+
+										}
+									}
+
+								}
+								break ;
+
+								default:
+									break;
+							}
+
+
+
+						}
+
+
+					}
+				}
+			}
 				break;
 
 			case Admin :
-			{	cerr<<"Log in as Admin : \n" ;
+			{	cout<<"Log in as Admin : \n" ;
 				string username, password ;
 				cout<<"\nusername : ";
 				cin>>username ;
