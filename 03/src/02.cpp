@@ -17,144 +17,163 @@ using namespace std;
 #include "customized_sortin_and_extra_algo_for_vector.h"
 int main() {
 
-
-
-
 	vector <students> stu = get_stu_obj() ;
-	/*
-	for (int i=0 ; i<stu.size(); i++ ){
-		stu[i].display() ;
-	}
-
-	 */
 	vector <course_eli> course  = get_course_obj() ;
-	/*
-	for (int i=0 ; i<course.size() ; i++ ){
-		course[i].display() ;
-	}
-
 	vector<center> center = get_center_obj() ;
-	for (int i=0 ; i<center.size() ; i++ ){
-		center[i].display() ;
-	}
-
-
-
-	 */
 	vector <capacities> capacities = get_capacity_obj() ;
-	/*	for (int i= 0 ; i<capacities.size(); i++ ){
-		capacities[i].display() ;
-	}
-
-
-
-	 */
 	vector<eligibility> eligiblities = get_eligibilty_obj() ;
-	/*	for (int i= 0 ; i<eligiblities.size(); i++ ){
-		eligiblities[i].display() ;
-	}
-
-	 */
 	vector<preferences> pref = get_prefrences_obj() ;
-	/*
-	for (int i= 0 ; i<pref.size() ;i++) {
-		pref[i].display() ;
-	}
-	 */
+
+//==================================================================
+	vector<students>::iterator STU = stu.begin() ;
+	vector<preferences>::iterator PREF = pref.begin() ;
+	vector<capacity_class>::iterator CAPACITY = capacities.begin() ;
+	vector<course_eli>::iterator COURSES = course.begin() ;
+	vector<eligibility>::iterator ELIGIBLE = eligiblities.begin() ;
+//=========================================================================
+
+	// sort by ranking of A
+	sort(stu.begin(),stu.end(),sort_by_A) ;
 
 
-	int count = 0 ;
+	int counter =0 ;
+	int cycle = 1 ;
 
-	// sort stundet by A,B,C rank ;
-	sort(stu.begin(),stu.end(),sort_by_A) ;   // ---> soritng is working perfectly
+		while ((STU != stu.end())&& STU->getAllocCentId()=="NA") {
 
+			PREF = pref.begin() ;
+			while(PREF != pref.end()){
 
-	for (size_t i=0 ; i<stu.size() ; i++ ){
-		stu[i].display() ;
+				if (PREF->getPrefNo()==to_string(cycle)){
+					if(STU->getFormNo()==PREF->getFormNo()){
 
-	}
+						ELIGIBLE = eligiblities.begin() ;
+						while(ELIGIBLE != eligiblities.end()){
 
-
-
-
-
-
-
-
+							if (ELIGIBLE->getCourse()==PREF->getCourseName()){
+								if (ELIGIBLE->getEligibilitys()==STU->getDegree()){
 
 
+									COURSES = course.begin() ;
+									while(COURSES != course.end()){
+									if (COURSES->getCcatSection()=="A") {
+										if (PREF->getCourseName()==COURSES->getCourseName()){
+
+											CAPACITY = capacities.begin() ;
+											while (CAPACITY != capacities.end()){
+
+												if (PREF->getCenterId()==CAPACITY->getCenterId()){
+													if (PREF->getCourseName()==CAPACITY->getCourseName()){
+
+														if (CAPACITY->getFilledCapacity() != CAPACITY->getMaxCapacity()){
+
+												STU->display() ;
+												cout<<"selected course : "<<PREF->getCourseName()<<endl ;
+												cout<<"selected pref : "<<PREF->getPrefNo()<<endl ;
+												cout<<"studnt branch : "<<STU->getDegree()<<endl;
+												cout<<"Eligible banch : "<<ELIGIBLE->getEligibilitys()<<endl ;
+												cout<<"CCAT section : "<<COURSES->getCcatSection()<<endl ;
+												cout<<"ceter id : "<<CAPACITY->getCenterId()<<endl;
+												cout<<"course name : "<<CAPACITY->getCourseName() <<endl;
+												cout<<"\n\n\n\n"<<endl;
+												counter++ ;
 
 
+												if (CAPACITY->getFilledCapacity()=="NA")
+													CAPACITY->setFilledCapacity("0") ;
 
 
+												CAPACITY->setFilledCapacity(to_string(1+stoi(CAPACITY->getFilledCapacity()))) ;
 
+														}
+													}
+												}
+												CAPACITY++ ;
+											}
 
-	/*
+										}
+									}
+									COURSES++ ;
+									}
+								}
+							}
 
-//	for (size_t i=0 ; i<stu.size() ; i++ )
-	{
-		int i=32 ;
-		stu[i].display() ;
-		vector<preferences>::iterator PREF ;
-		PREF = pref.begin() ;
+						ELIGIBLE++ ;
+						}
 
-		while (PREF != pref.end()){
-
-			PREF->getCenterId() ;
-			PREF->getCourseName() ;
-
-			vector<capacity_class>::iterator CAPACITY ;
-			CAPACITY = capacities.begin() ;
-
-			while (CAPACITY != capacities.end()) {
-
-				if ((PREF->getCenterId()==CAPACITY->getCenterId())&&
-						(PREF->getCourseName()==CAPACITY->getCourseName())&&
-						(CAPACITY->getMaxCapacity()==CAPACITY->getFilledCapacity())){
-
-					break ;
+					}
 				}
-
-				if ((PREF->getFormNo() == stu[i].getFormNo())&&
-						(stu[i].getAllocCentId() == "NA")) {
-
-					stu[i].setAllocPref(PREF->getPrefNo()) ;
-					stu[i].setAllocCourse(PREF->getCourseName()) ;
-					stu[i].setAllocCentId(PREF->getCenterId()) ;
-					stu[i].display() ;
-
-					break ;
-				}
-
 				PREF++ ;
 			}
-			CAPACITY++ ;
+			STU++ ;
 		}
-	}
 
 
 
 
 
-	 */
 
 
 
 
 
-	for (int i= 0 ; i<capacities.size(); i++ ){
-		capacities[i].display() ;
-	}
+
+
+
+
+
+
+
+
+
 
 
 /*
+only for student and prefrences table
+	int counter =0 ;
+	int cycle = 1 ;
 
-	cout<<"\n\n\ntotal count "<<count <<endl ;
-	for (int i=0 ; i<stu.size(); i++ ){
+	while ((STU != stu.end())&& STU->getAllocCentId()=="NA") {
+
+		PREF = pref.begin() ;
+		while(PREF != pref.end()){
+
+			if (PREF->getPrefNo()==to_string(cycle)){
+				if(STU->getFormNo()==PREF->getFormNo()){
+
+
+
+					STU->display() ;
+					cout<<"selected course : "<<PREF->getCourseName()<<"\n\n\n\n"<<endl ;
+					counter++ ;
+
+
+				}
+			}
+			PREF++ ;
+		}
+		STU++ ;
+	}
+
+*/
+
+
+
+
+
+
+	for (size_t i= 0 ; i<capacities.size(); i++ ){
+		if (capacities[i].getCourseName() == "PG-DGI")
+		capacities[i].display() ;
+	}
+	/*
+	for (size_t i=0 ; i<stu.size(); i++ ){
 		stu[i].display() ;
 	}
 
 */
 
+
+cout<<"\n\n\ncount is "<<counter <<endl ;
 	return 0 ;
 }

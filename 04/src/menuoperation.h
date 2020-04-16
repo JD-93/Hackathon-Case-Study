@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-
+#include "student_menu.h"
 #ifndef MENUOPERATION_H_
 #define MENUOPERATION_H_
 
-typedef enum operation
-{EXIT,Student,Admin,Center_coordinator}MENUOPERATIONS;
+enum operation
+{EXIT,Student,Admin,Center_coordinator};
 
 int menuoperation()
 {
