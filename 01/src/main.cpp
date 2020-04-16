@@ -8,11 +8,14 @@
 int main() {
 
 
-	int choice,admin_choice ;
+	int choice ;
 	while ((choice=menuoperation())!= EXIT ){
 
 		switch (choice) {
 		case Student:
+		{
+
+		}
 			break;
 
 		case Admin:

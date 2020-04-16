@@ -6,7 +6,7 @@ using namespace std;
 #define ADMIN_MENU_H_
 
 enum{Exit1,allocate_round_1,list_allocated_stu,list_all_stu,list_course_eligibility,
-		list_center_capacity,update_rank,allocate_round_2} ;
+		list_center_capacity,update_rank,allocate_round_2,list_of_paid_std } ;
 
 
 int admin_menu()
@@ -19,6 +19,7 @@ int admin_menu()
 	cout<<"5. list center and capacity"<<endl ;
 	cout<<"6. update student ranks" <<endl;
 	cout<<"7. Allocate centers (Round 2)"<<endl ;
+	cout<<"8. list of fee paid students : "<<endl ;
 	cout<<"\nEnter choice : " ;
 	int choice ;
 	cin>>choice ;

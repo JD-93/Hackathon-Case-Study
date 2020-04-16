@@ -26,6 +26,9 @@ vector<eligibility> eligiblities = get_eligibilty_obj() ;
 vector<preferences> pref = get_prefrences_obj() ;
 #include "hard_work.h"
 #include "hard_work_2.h"
+
+#include "round_1_csv_creator.h"
+#include "round_2_csv_creator.h"
 int main()
 {
 	int choice ;
@@ -119,10 +122,18 @@ int main()
 					switch (choice) {
 						case allocate_round_1:
 							first_round() ;
+							/* create round 1 student csv file */
+							round_1_csv_students() ;
+							/* create round 1 capacity csv file */
+							round_1_csv_capacity();
 							break;
 
 						case allocate_round_2 :
 							second_round() ;
+							/* create round 2 student csv file */
+							round_2_csv_students() ;
+							/* create round 2 capacity csv file */
+							round_2_csv_capacity();
 							break ;
 
 						case list_allocated_stu :
@@ -166,6 +177,15 @@ int main()
 								cout<<capacities[i].getCenterId()<<"\t\t"
 										<<capacities[i].getCourseName()<<"\t\t"
 										<<capacities[i].getMaxCapacity()<<endl ;
+							}
+						}
+						break ;
+
+						case list_of_paid_std :
+						{
+							for (size_t i=0 ; i<stu.size() ; i++ ){
+								if (stu[i].getPayment()=="11800")
+									stu[i].display() ;
 							}
 						}
 						break ;
