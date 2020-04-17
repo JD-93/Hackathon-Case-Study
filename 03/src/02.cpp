@@ -339,8 +339,9 @@ int main()
 									{
 										for (size_t x=0 ; x<stu.size(); x++) {
 											if (stu[x].getAllocCentId()==center[i].getCenterId()){
+												if (stu[x].getReportCenter() != "NOT REPORTED"){
 												stu[x].setReportCenter("REPORTED") ;
-
+												}
 											}
 										}
 									}

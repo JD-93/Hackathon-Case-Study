@@ -20,7 +20,7 @@ void second_round() {
 		if (stu[i].getAllocCentId()!="NA"){
 			if (stu[i].getPayment()!="11800"){
 				stu[i].setPayment("NOT PAID IN 1st ROUND") ;
-				stu[i].setReportCenter("NOT PAID") ;
+				stu[i].setReportCenter("NOT REPORTED") ;
 				stu[i].setPrn("NULL") ;
 
 				for (size_t j=0 ; j<capacities.size(); j++ ){
