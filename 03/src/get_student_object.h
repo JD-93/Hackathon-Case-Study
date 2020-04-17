@@ -35,14 +35,11 @@ vector <students> get_stu_obj()
 		getline(ss,temp,',') ;
 		s.setRankA(temp) ;
 
-
 		getline(ss,temp,',') ;
 		s.setRankB(temp) ;
 
-
 		getline(ss,temp,',') ;
 		s.setRankC(temp) ;
-
 
 		getline(ss,temp,',') ;
 		s.setDegree(temp) ;
@@ -68,16 +65,8 @@ vector <students> get_stu_obj()
 		getline(ss,temp,',') ;
 		s.setPrn("NA") ;
 
-
 		temp_stu.push_back(s) ;
 	}
-
-
-
-
-//	sort(temp_stu.begin(),temp_stu.end()) ;
-
-
 
 	return temp_stu ;
 }
