@@ -1,1106 +1,712 @@
-12:59:12 **** Clean-only build of configuration Debug for project demo ****
+15:44:18 **** Clean-only build of configuration Debug for project demo class work 2  ****
 make clean 
-rm -rf  ./src/main.o  ./src/main.d  demo
- 
-12:59:20 **** Build of configuration Debug for project demo ****
+make: *** No rule to make target 'clean'.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+15:44:26 **** Build of configuration Debug for project demo class work 2  ****
 make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In member function ‘void dept::display()’:
-../src/main.cpp:27:7: error: no match for ‘operator<<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’})
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:108:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:108:36: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
-  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
-      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/9/ostream:117:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]’
-  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:117:32: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
-  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
-      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
-/usr/include/c++/9/ostream:127:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  127 |       operator<<(ios_base& (*__pf) (ios_base&))
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:127:30: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘std::ios_base& (*)(std::ios_base&)’
-  127 |       operator<<(ios_base& (*__pf) (ios_base&))
-      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-/usr/include/c++/9/ostream:166:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  166 |       operator<<(long __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:166:23: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘long int’
-  166 |       operator<<(long __n)
-      |                  ~~~~~^~~
-/usr/include/c++/9/ostream:170:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  170 |       operator<<(unsigned long __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:170:32: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘long unsigned int’
-  170 |       operator<<(unsigned long __n)
-      |                  ~~~~~~~~~~~~~~^~~
-/usr/include/c++/9/ostream:174:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  174 |       operator<<(bool __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:174:23: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘bool’
-  174 |       operator<<(bool __n)
-      |                  ~~~~~^~~
-In file included from /usr/include/c++/9/ostream:702,
-                 from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/bits/ostream.tcc:91:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
-   91 |     basic_ostream<_CharT, _Traits>::
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/9/bits/ostream.tcc:92:22: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘short int’
-   92 |     operator<<(short __n)
-      |                ~~~~~~^~~
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:181:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  181 |       operator<<(unsigned short __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:181:33: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘short unsigned int’
-  181 |       operator<<(unsigned short __n)
-      |                  ~~~~~~~~~~~~~~~^~~
-In file included from /usr/include/c++/9/ostream:702,
-                 from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/bits/ostream.tcc:105:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
-  105 |     basic_ostream<_CharT, _Traits>::
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/9/bits/ostream.tcc:106:20: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘int’
-  106 |     operator<<(int __n)
-      |                ~~~~^~~
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:192:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  192 |       operator<<(unsigned int __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:192:31: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘unsigned int’
-  192 |       operator<<(unsigned int __n)
-      |                  ~~~~~~~~~~~~~^~~
-/usr/include/c++/9/ostream:201:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  201 |       operator<<(long long __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:201:28: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘long long int’
-  201 |       operator<<(long long __n)
-      |                  ~~~~~~~~~~^~~
-/usr/include/c++/9/ostream:205:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  205 |       operator<<(unsigned long long __n)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:205:37: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘long long unsigned int’
-  205 |       operator<<(unsigned long long __n)
-      |                  ~~~~~~~~~~~~~~~~~~~^~~
-/usr/include/c++/9/ostream:220:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  220 |       operator<<(double __f)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:220:25: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘double’
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-  220 |       operator<<(double __f)
-      |                  ~~~~~~~^~~
-/usr/include/c++/9/ostream:224:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  224 |       operator<<(float __f)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:224:24: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘float’
-  224 |       operator<<(float __f)
-      |                  ~~~~~~^~~
-/usr/include/c++/9/ostream:232:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  232 |       operator<<(long double __f)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:232:30: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘long double’
-  232 |       operator<<(long double __f)
-      |                  ~~~~~~~~~~~~^~~
-/usr/include/c++/9/ostream:245:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]’
-  245 |       operator<<(const void* __p)
-      |       ^~~~~~~~
-/usr/include/c++/9/ostream:245:30: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘const void*’
-  245 |       operator<<(const void* __p)
-      |                  ~~~~~~~~~~~~^~~
-In file included from /usr/include/c++/9/ostream:702,
-                 from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/bits/ostream.tcc:119:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]’
-  119 |     basic_ostream<_CharT, _Traits>::
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/include/c++/9/bits/ostream.tcc:120:34: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
-  120 |     operator<<(__streambuf_type* __sbin)
-      |                ~~~~~~~~~~~~~~~~~~^~~~~~
-In file included from /usr/include/c++/9/string:55,
-                 from /usr/include/c++/9/bits/locale_classes.h:40,
-                 from /usr/include/c++/9/bits/ios_base.h:41,
-                 from /usr/include/c++/9/ios:42,
-                 from /usr/include/c++/9/istream:38,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/bits/basic_string.h:6416:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
- 6416 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6416:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/bits/ios_base.h:46,
-                 from /usr/include/c++/9/ios:42,
-                 from /usr/include/c++/9/istream:38,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/system_error:217:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)’
-  217 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
-      |     ^~~~~~~~
-/usr/include/c++/9/system_error:217:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘const std::error_code&’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:506:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)’
-  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:506:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘emp’)
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:511:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)’
-  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:511:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘char’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:517:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)’
-  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:517:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘char’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:523:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)’
-  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:523:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘signed char’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:528:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)’
-  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:528:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘unsigned char’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:548:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’
-  548 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:548:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   mismatched types ‘const _CharT*’ and ‘emp’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/ostream:702,
-                 from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/bits/ostream.tcc:321:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)’
-  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘const char*’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:565:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’
-  565 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:565:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘const char*’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:578:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)’
-  578 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:578:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘const signed char*’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:583:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)’
-  583 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:583:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘const unsigned char*’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from /usr/include/c++/9/istream:39,
-                 from /usr/include/c++/9/sstream:38,
-                 from ../src/main.cpp:1:
-/usr/include/c++/9/ostream:691:5: note: candidate: ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)’
-  691 |     operator<<(_Ostream&& __os, const _Tp& __x)
-      |     ^~~~~~~~
-/usr/include/c++/9/ostream:691:5: note:   template argument deduction/substitution failed:
-/usr/include/c++/9/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = emp]’:
-../src/main.cpp:27:15:   required from here
-/usr/include/c++/9/ostream:691:5: error: no type named ‘type’ in ‘struct std::enable_if<false, std::basic_ostream<char>&>’
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:79:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)’
-   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:79:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘std::_Resetiosflags’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:109:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)’
-  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:109:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘std::_Setiosflags’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:143:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)’
-  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:143:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘std::_Setbase’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:178:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)’
-  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:178:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   ‘emp’ is not derived from ‘std::_Setfill<_CharT>’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:208:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)’
-  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:208:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘std::_Setprecision’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:238:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)’
-  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:238:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   cannot convert ‘((dept*)this)->dept::emps.std::vector<emp>::operator[](0)’ (type ‘__gnu_cxx::__alloc_traits<std::allocator<emp>, emp>::value_type’ {aka ‘emp’}) to type ‘std::_Setw’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:311:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)’
-  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:311:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   ‘emp’ is not derived from ‘std::_Put_money<_MoneyT>’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-In file included from ../src/main.cpp:4:
-/usr/include/c++/9/iomanip:363:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)’
-  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
-      |     ^~~~~~~~
-/usr/include/c++/9/iomanip:363:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:27:15: note:   ‘emp’ is not derived from ‘std::_Put_time<_CharT>’
-   27 |   cout<<emps[0] <<"\n"<<endl  ;
-      |               ^
-make: *** [src/main.o] Error 1
+make: *** No rule to make target 'all'.  Stop.
 "make all" terminated with exit code 2. Build might be incomplete.
-12:59:56 **** Incremental Build of configuration Debug for project demo ****
+15:44:34 **** Incremental Build of configuration Debug for project demo class work 2  ****
 make all 
-Building file: ../src/main.cpp
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+15:44:56 **** Incremental Build of configuration Debug for project demo class work 2  ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:43 **** Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: demo
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo"  ./src/main.o   
-Finished building target: demo
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-13:00:22 **** Incremental Build of configuration Debug for project demo ****
+15:45:43 **** Incremental Build of configuration Debug for project demo class work 2  ****
 make all 
-Building file: ../src/main.cpp
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:49 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: demo
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo"  ./src/main.o   
-Finished building target: demo
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-13:00:42 **** Incremental Build of configuration Debug for project demo ****
+15:45:50 **** Incremental Build of configuration Debug for project demo class work 2  ****
 make all 
-Building file: ../src/main.cpp
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+15:46:05 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+15:46:11 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:08 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: demo
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo"  ./src/main.o   
-Finished building target: demo
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-13:01:46 **** Incremental Build of configuration Debug for project demo ****
+16:13:20 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:94:2: error: expected initializer before ‘load_emp_csv’
-   94 |  load_emp_csv(emps) ;
-      |  ^~~~~~~~~~~~
-../src/main.cpp:97:31: error: ‘emps’ was not declared in this scope; did you mean ‘emp’?
-   97 |  cout<<"size of depts is : "<<emps.size()<<endl;
-      |                               ^~~~
-      |                               emp
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:01:52 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:94:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   94 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &depts)
-      |                   ~~~~~~~~~~~~~~^~~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:02:56 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:02:59 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-make: *** [src/main.o] Error 1
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:01 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:02 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:04 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:06 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:08 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-make: *** [src/main.o] Error 1
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:10 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:11 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:13 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:14 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-make: *** [src/main.o] Error 1
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-13:03:15 **** Incremental Build of configuration Debug for project demo ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
-   92 |  load_emp_csv(emps) ;
-      |               ^~~~
-../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
-   62 | void load_emp_csv(vector<dept> &emps)
-      |                   ~~~~~~~~~~~~~~^~~~
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:49:45 **** Clean-only build of configuration Debug for project demo class work 01 ****
-make clean 
-rm -rf  ./src/main.o  ./src/main.d  demo
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-13:49:45 **** Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: demo class work 01
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-13:50:07 **** Incremental Build of configuration Debug for project demo class work 01 ****
+16:14:11 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: demo class work 01
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-13:50:33 **** Incremental Build of configuration Debug for project demo class work 01 ****
+16:44:22 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: demo class work 01
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-13:53:22 **** Incremental Build of configuration Debug for project demo class work 01 ****
+16:44:58 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘void load_dept_cvs(std::vector<dept>&)’:
-../src/main.cpp:59:15: error: ‘toekn’ was not declared in this scope; did you mean ‘token’?
-   59 |    getline(ss,toekn[i],',') ;
-      |               ^~~~~
-      |               token
-make: *** [src/main.o] Error 1
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-13:55:40 **** Incremental Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:82:2: error: ‘load_dept_csv’ was not declared in this scope; did you mean ‘load_dept_cvs’?
-   82 |  load_dept_csv(depts) ;
-      |  ^~~~~~~~~~~~~
-      |  load_dept_cvs
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:56:11 **** Incremental Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: demo class work 01
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-14:01:52 **** Incremental Build of configuration Debug for project demo class work 01 ****
+17:02:17 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘int main()’:
-../src/main.cpp:103:27: error: ‘emps’ was not declared in this scope; did you mean ‘emp’?
-  103 |  cout<<"size of emps : "<<emps.size()<<endl ;
-      |                           ^~~~
-      |                           emp
-make: *** [src/main.o] Error 1
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-14:02:19 **** Incremental Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: demo class work 01
-Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
- 
-14:02:58 **** Incremental Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: demo class work 01
-Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
- 
-14:03:12 **** Incremental Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: demo class work 01
-Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
- 
-14:37:13 **** Incremental Build of configuration Debug for project demo class work 01 ****
-make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘void save_emp_csv(std::vector<dept>)’:
-../src/main.cpp:88:20: error: no match for call to ‘(std::ofstream {aka std::basic_ofstream<char>}) (const char [12])’
-   88 |  outf("new_emp.csv") ;
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:182:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  182 |     obj.emp_invites[invitaions[j].emp_no] = j ;
       |                    ^
-../src/main.cpp:91:21: error: no match for ‘operator<’ (operand types are ‘size_t’ {aka ‘long unsigned int’} and ‘std::vector<emp>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<emp*, std::vector<emp> >’})
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                    ~^~~~~~~~~~~~~~~~~~~~
-      |                    |                  |
-      |                    |                  std::vector<emp>::iterator {aka __gnu_cxx::__normal_iterator<emp*, std::vector<emp> >}
-      |                    size_t {aka long unsigned int}
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:02:40 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:182:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  182 |     obj.emp_invites[invitaions[j].emp_no] = (int ) j ;
+      |                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:02:53 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:177:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<invitation>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  177 |   for (int j=0 ; j<invitaions.size() ; j++ ){
+      |                  ~^~~~~~~~~~~~~~~~~~
+../src/demo class work 02.cpp:182:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  182 |     obj.emp_invites[invitaions[j].emp_no] =  j ;
+      |                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:03:05 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:182:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  182 |     obj.emp_invites[invitaions[j].emp_no] =  j ;
+      |                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+make: *** [src/demo class work 02.o] Error 1
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+17:04:15 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In member function ‘void meeting::display_invitaions(std::vector<invitation>&)’:
+../src/demo class work 02.cpp:150:52: error: conversion from ‘_Rb_tree_iterator<pair<[...],int>>’ to non-scalar type ‘_Rb_tree_iterator<pair<[...],long unsigned int>>’ requested
+  150 |   map<int,size_t>::iterator itr = emp_invites.begin() ;
+      |                                   ~~~~~~~~~~~~~~~~~^~
+../src/demo class work 02.cpp:151:13: error: no match for ‘operator!=’ (operand types are ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} and ‘std::map<int, int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, int> >’})
+  151 |   while(itr != emp_invites.end()){
+      |         ~~~ ^~ ~~~~~~~~~~~~~~~~~
+      |         |                     |
+      |         |                     _Rb_tree_iterator<pair<[...],int>>
+      |         _Rb_tree_iterator<pair<[...],long unsigned int>>
+In file included from /usr/include/c++/9/iosfwd:40,
+                 from /usr/include/c++/9/ios:38,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/postypes.h:227:5: note: candidate: ‘template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)’
+  227 |     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/postypes.h:227:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::fpos<_StateT>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_pair.h:454:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
-  454 |     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/stl_pair.h:461:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  461 |     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/stl_pair.h:461:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::pair<_T1, _T2>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:331:5: note: candidate: ‘template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
-  331 |     operator<(const reverse_iterator<_Iterator>& __x,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:337:5: note: candidate: ‘template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  337 |     operator!=(const reverse_iterator<_Iterator>& __x,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:331:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/stl_iterator.h:337:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:369:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
-  369 |     operator<(const reverse_iterator<_IteratorL>& __x,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:375:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  375 |     operator!=(const reverse_iterator<_IteratorL>& __x,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:369:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/stl_iterator.h:375:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:1163:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
- 1163 |     operator<(const move_iterator<_IteratorL>& __x,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:1151:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1151 |     operator!=(const move_iterator<_IteratorL>& __x,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:1163:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/stl_iterator.h:1151:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
                  from /usr/include/c++/9/bits/char_traits.h:39,
                  from /usr/include/c++/9/ios:40,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:1169:5: note: candidate: ‘template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
- 1169 |     operator<(const move_iterator<_Iterator>& __x,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:1157:5: note: candidate: ‘template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1157 |     operator!=(const move_iterator<_Iterator>& __x,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:1169:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/stl_iterator.h:1157:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
+In file included from /usr/include/c++/9/string:41,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/allocator.h:174:5: note: candidate: ‘template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)’
+  174 |     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/allocator.h:174:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::allocator<_CharT>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/basic_string.h:6226:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
- 6226 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/basic_string.h:6188:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6188 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6226:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/basic_string.h:6188:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/basic_string.h:6239:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
- 6239 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/basic_string.h:6201:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 6201 |     operator!=(const _CharT* __lhs,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6239:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/basic_string.h:6201:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   mismatched types ‘const _CharT*’ and ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/string:55,
                  from /usr/include/c++/9/bits/locale_classes.h:40,
                  from /usr/include/c++/9/bits/ios_base.h:41,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/basic_string.h:6251:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
- 6251 |     operator<(const _CharT* __lhs,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/basic_string.h:6213:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
+ 6213 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6251:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const _CharT*’ and ‘long unsigned int’
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
+/usr/include/c++/9/bits/basic_string.h:6213:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/bits/ios_base.h:46,
                  from /usr/include/c++/9/ios:42,
                  from /usr/include/c++/9/ostream:38,
                  from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/system_error:208:3: note: candidate: ‘bool std::operator<(const std::error_code&, const std::error_code&)’
-  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/system_error:319:3: note: candidate: ‘bool std::operator!=(const std::error_code&, const std::error_code&)’
+  319 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
       |   ^~~~~~~~
-/usr/include/c++/9/system_error:208:31: note:   no known conversion for argument 1 from ‘size_t’ {aka ‘long unsigned int’} to ‘const std::error_code&’
-  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
-      |             ~~~~~~~~~~~~~~~~~~^~~~~
-/usr/include/c++/9/system_error:282:3: note: candidate: ‘bool std::operator<(const std::error_condition&, const std::error_condition&)’
-  282 |   operator<(const error_condition& __lhs,
+/usr/include/c++/9/system_error:319:32: note:   no known conversion for argument 1 from ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} to ‘const std::error_code&’
+  319 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/9/system_error:323:3: note: candidate: ‘bool std::operator!=(const std::error_code&, const std::error_condition&)’
+  323 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
       |   ^~~~~~~~
-/usr/include/c++/9/system_error:282:36: note:   no known conversion for argument 1 from ‘size_t’ {aka ‘long unsigned int’} to ‘const std::error_condition&’
-  282 |   operator<(const error_condition& __lhs,
-      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/9/system_error:323:32: note:   no known conversion for argument 1 from ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} to ‘const std::error_code&’
+  323 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/9/system_error:327:3: note: candidate: ‘bool std::operator!=(const std::error_condition&, const std::error_code&)’
+  327 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/9/system_error:327:37: note:   no known conversion for argument 1 from ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} to ‘const std::error_condition&’
+  327 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/9/system_error:331:3: note: candidate: ‘bool std::operator!=(const std::error_condition&, const std::error_condition&)’
+  331 |   operator!=(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/9/system_error:331:37: note:   no known conversion for argument 1 from ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} to ‘const std::error_condition&’
+  331 |   operator!=(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/c++/9/bits/locale_facets.h:48,
+                 from /usr/include/c++/9/bits/basic_ios.h:37,
+                 from /usr/include/c++/9/ios:44,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/demo class work 02.cpp:2:
+/usr/include/c++/9/bits/streambuf_iterator.h:214:5: note: candidate: ‘template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)’
+  214 |     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/streambuf_iterator.h:214:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
 In file included from /usr/include/c++/9/vector:67,
-                 from ../src/main.cpp:7:
-/usr/include/c++/9/bits/stl_vector.h:1905:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
- 1905 |     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+                 from ../src/demo class work 02.cpp:7:
+/usr/include/c++/9/bits/stl_vector.h:1912:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1912 |     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_vector.h:1905:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:915:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’
-  915 |     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+/usr/include/c++/9/bits/stl_vector.h:1912:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::vector<_Tp, _Alloc>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
+In file included from /usr/include/c++/9/tuple:39,
+                 from /usr/include/c++/9/bits/stl_map.h:63,
+                 from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/array:257:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  257 |     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:915:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:922:5: note: candidate: ‘template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
-  922 |     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+/usr/include/c++/9/array:257:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::array<_Tp, _Nm>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
+In file included from /usr/include/c++/9/bits/stl_map.h:63,
+                 from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/tuple:1445:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)’
+ 1445 |     operator!=(const tuple<_TElements...>& __t,
       |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:922:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
+/usr/include/c++/9/tuple:1445:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::tuple<_Tps ...>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:1479:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)’
+ 1479 |     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:1479:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
+In file included from /usr/include/c++/9/map:62,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_multimap.h:1143:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)’
+ 1143 |     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_multimap.h:1143:5: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:151:32: note:   ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+  151 |   while(itr != emp_invites.end()){
+      |                                ^
+In file included from /usr/include/c++/9/map:60,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_tree.h:319:7: note: candidate: ‘bool std::operator!=(const _Self&, const _Self&)’
+  319 |       operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_tree.h:319:31: note:   no known conversion for argument 1 from ‘std::map<int, long unsigned int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >’} to ‘const _Self&’ {aka ‘const std::_Rb_tree_iterator<std::pair<const int, int> >&’}
+  319 |       operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_tree.h:319:7: note: candidate: ‘bool std::operator!=(const _Self&, const _Self&)’
+  319 |       operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_tree.h:319:49: note:   no known conversion for argument 2 from ‘std::map<int, int>::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const int, int> >’} to ‘const _Self&’ {aka ‘const std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >&’}
+  319 |       operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+      |                                    ~~~~~~~~~~~~~^~~
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:182:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  182 |     obj.emp_invites[invitaions[j].emp_no] =  j ;
+      |                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-14:38:38 **** Incremental Build of configuration Debug for project demo class work 01 ****
+17:04:29 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function ‘void save_emp_csv(std::vector<dept>)’:
-../src/main.cpp:91:21: error: no match for ‘operator<’ (operand types are ‘size_t’ {aka ‘long unsigned int’} and ‘std::vector<emp>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<emp*, std::vector<emp> >’})
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                    ~^~~~~~~~~~~~~~~~~~~~
-      |                    |                  |
-      |                    |                  std::vector<emp>::iterator {aka __gnu_cxx::__normal_iterator<emp*, std::vector<emp> >}
-      |                    size_t {aka long unsigned int}
-In file included from /usr/include/c++/9/bits/stl_algobase.h:64,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_pair.h:454:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
-  454 |     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:331:5: note: candidate: ‘template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
-  331 |     operator<(const reverse_iterator<_Iterator>& __x,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:331:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:369:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
-  369 |     operator<(const reverse_iterator<_IteratorL>& __x,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:369:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:1163:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
- 1163 |     operator<(const move_iterator<_IteratorL>& __x,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:1163:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:1169:5: note: candidate: ‘template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
- 1169 |     operator<(const move_iterator<_Iterator>& __x,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:1169:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/string:55,
-                 from /usr/include/c++/9/bits/locale_classes.h:40,
-                 from /usr/include/c++/9/bits/ios_base.h:41,
-                 from /usr/include/c++/9/ios:42,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/basic_string.h:6226:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
- 6226 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6226:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/string:55,
-                 from /usr/include/c++/9/bits/locale_classes.h:40,
-                 from /usr/include/c++/9/bits/ios_base.h:41,
-                 from /usr/include/c++/9/ios:42,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/basic_string.h:6239:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)’
- 6239 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6239:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/string:55,
-                 from /usr/include/c++/9/bits/locale_classes.h:40,
-                 from /usr/include/c++/9/bits/ios_base.h:41,
-                 from /usr/include/c++/9/ios:42,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/basic_string.h:6251:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
- 6251 |     operator<(const _CharT* __lhs,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/basic_string.h:6251:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const _CharT*’ and ‘long unsigned int’
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/ios_base.h:46,
-                 from /usr/include/c++/9/ios:42,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/system_error:208:3: note: candidate: ‘bool std::operator<(const std::error_code&, const std::error_code&)’
-  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
-      |   ^~~~~~~~
-/usr/include/c++/9/system_error:208:31: note:   no known conversion for argument 1 from ‘size_t’ {aka ‘long unsigned int’} to ‘const std::error_code&’
-  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
-      |             ~~~~~~~~~~~~~~~~~~^~~~~
-/usr/include/c++/9/system_error:282:3: note: candidate: ‘bool std::operator<(const std::error_condition&, const std::error_condition&)’
-  282 |   operator<(const error_condition& __lhs,
-      |   ^~~~~~~~
-/usr/include/c++/9/system_error:282:36: note:   no known conversion for argument 1 from ‘size_t’ {aka ‘long unsigned int’} to ‘const std::error_condition&’
-  282 |   operator<(const error_condition& __lhs,
-      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
-In file included from /usr/include/c++/9/vector:67,
-                 from ../src/main.cpp:7:
-/usr/include/c++/9/bits/stl_vector.h:1905:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
- 1905 |     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_vector.h:1905:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:915:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’
-  915 |     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:915:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
-                 from /usr/include/c++/9/bits/char_traits.h:39,
-                 from /usr/include/c++/9/ios:40,
-                 from /usr/include/c++/9/ostream:38,
-                 from /usr/include/c++/9/iostream:39,
-                 from ../src/main.cpp:2:
-/usr/include/c++/9/bits/stl_iterator.h:922:5: note: candidate: ‘template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
-  922 |     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
-      |     ^~~~~~~~
-/usr/include/c++/9/bits/stl_iterator.h:922:5: note:   template argument deduction/substitution failed:
-../src/main.cpp:91:40: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘size_t’ {aka ‘long unsigned int’}
-   91 |   for(size_t j=0 ; j<depts[i].emps.end() ; j++ ){
-      |                                        ^
-src/subdir.mk:18: recipe for target 'src/main.o' failed
-make: *** [src/main.o] Error 1
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:182:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, long unsigned int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  182 |     obj.emp_invites[invitaions[j].emp_no] =  j ;
+      |                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = long unsigned int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = long unsigned int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, long unsigned int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-14:38:54 **** Incremental Build of configuration Debug for project demo class work 01 ****
+17:06:30 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: demo class work 01
-Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
- 
-14:41:06 **** Incremental Build of configuration Debug for project demo class work 01 ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:181:20: error: no match for ‘operator[]’ (operand types are ‘std::map<int, long unsigned int>’ and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+  181 |     obj.emp_invites[invitaions[j].emp_no] =  j ;
+      |                    ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = long unsigned int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = long unsigned int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, long unsigned int>::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+make: *** [src/demo class work 02.o] Error 1
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+17:10:54 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: demo class work 01
-Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
- 
-14:42:06 **** Build of configuration Debug for project as per lectures ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:180:50: error: no matching function for call to ‘std::map<int, long unsigned int>::insert(std::string&, int)’
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+      |                                                  ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:801:7: note: candidate: ‘std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const value_type&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  801 |       insert(const value_type& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:801:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/bits/stl_map.h:808:7: note: candidate: ‘std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  808 |       insert(value_type&& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:808:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/bits/stl_map.h:814:2: note: candidate: ‘template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> > std::map<_Key, _Tp, _Compare, _Alloc>::insert(_Pair&&) [with _Pair = _Pair; _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  814 |  insert(_Pair&& __x)
+      |  ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:814:2: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:180:50: note:   candidate expects 1 argument, 2 provided
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+      |                                                  ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:828:7: note: candidate: ‘void std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  828 |       insert(std::initializer_list<value_type> __list)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:828:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/bits/stl_map.h:858:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, const value_type&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  858 |       insert(const_iterator __position, const value_type& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:858:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, long unsigned int>::const_iterator’ {aka ‘std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >’}
+  858 |       insert(const_iterator __position, const value_type& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:868:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  868 |       insert(const_iterator __position, value_type&& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:868:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, long unsigned int>::const_iterator’ {aka ‘std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >’}
+  868 |       insert(const_iterator __position, value_type&& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:873:2: note: candidate: ‘template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, _Pair&&) [with _Pair = _Pair; _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  873 |  insert(const_iterator __position, _Pair&& __x)
+      |  ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:873:2: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:180:42: note:   cannot convert ‘(& invitaions)->std::vector<invitation>::operator[](j).invitation::emp_no’ (type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}) to type ‘std::map<int, long unsigned int>::const_iterator’ {aka ‘std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >’}
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:891:2: note: candidate: ‘template<class _InputIterator> void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  891 |  insert(_InputIterator __first, _InputIterator __last)
+      |  ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:891:2: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:180:50: note:   deduced conflicting types for parameter ‘_InputIterator’ (‘std::__cxx11::basic_string<char>’ and ‘int’)
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+      |                                                  ^
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:11:09 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/as per lectures.cpp
+Building file: ../src/demo class work 02.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp: In function ‘void load_meeting_csv(std::vector<meeting>&, std::vector<invitation>&)’:
+../src/demo class work 02.cpp:180:50: error: no matching function for call to ‘std::map<int, long unsigned int>::insert(std::string&, int)’
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+      |                                                  ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:801:7: note: candidate: ‘std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const value_type&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  801 |       insert(const value_type& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:801:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/bits/stl_map.h:808:7: note: candidate: ‘std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  808 |       insert(value_type&& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:808:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/bits/stl_map.h:814:2: note: candidate: ‘template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> > std::map<_Key, _Tp, _Compare, _Alloc>::insert(_Pair&&) [with _Pair = _Pair; _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  814 |  insert(_Pair&& __x)
+      |  ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:814:2: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:180:50: note:   candidate expects 1 argument, 2 provided
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+      |                                                  ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:828:7: note: candidate: ‘void std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  828 |       insert(std::initializer_list<value_type> __list)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:828:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/bits/stl_map.h:858:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, const value_type&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  858 |       insert(const_iterator __position, const value_type& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:858:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, long unsigned int>::const_iterator’ {aka ‘std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >’}
+  858 |       insert(const_iterator __position, const value_type& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:868:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, long unsigned int>]’
+  868 |       insert(const_iterator __position, value_type&& __x)
+      |       ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:868:29: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::map<int, long unsigned int>::const_iterator’ {aka ‘std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >’}
+  868 |       insert(const_iterator __position, value_type&& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:873:2: note: candidate: ‘template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, _Pair&&) [with _Pair = _Pair; _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  873 |  insert(const_iterator __position, _Pair&& __x)
+      |  ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:873:2: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:180:42: note:   cannot convert ‘(& invitaions)->std::vector<invitation>::operator[](j).invitation::emp_no’ (type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}) to type ‘std::map<int, long unsigned int>::const_iterator’ {aka ‘std::_Rb_tree_const_iterator<std::pair<const int, long unsigned int> >’}
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/demo class work 02.cpp:8:
+/usr/include/c++/9/bits/stl_map.h:891:2: note: candidate: ‘template<class _InputIterator> void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _Key = int; _Tp = long unsigned int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, long unsigned int> >]’
+  891 |  insert(_InputIterator __first, _InputIterator __last)
+      |  ^~~~~~
+/usr/include/c++/9/bits/stl_map.h:891:2: note:   template argument deduction/substitution failed:
+../src/demo class work 02.cpp:180:50: note:   deduced conflicting types for parameter ‘_InputIterator’ (‘std::__cxx11::basic_string<char>’ and ‘int’)
+  180 |     obj.emp_invites.insert(invitaions[j].emp_no,0) ;
+      |                                                  ^
+make: *** [src/demo class work 02.o] Error 1
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+17:12:10 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
  
-Building target: as per lectures
+Building target: demo class work 02
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o   
-Finished building target: as per lectures
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
  
-14:42:12 **** Incremental Build of configuration Debug for project as per lectures ****
+17:12:36 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
+ 
+Building target: demo class work 02
+Invoking: GCC C++ Linker
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
+ 
+17:18:07 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
 make: Nothing to be done for 'all'.
-14:45:46 **** Incremental Build of configuration Debug for project as per lectures ****
+17:18:11 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
 make: Nothing to be done for 'all'.
+17:18:28 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
+ 
+Building target: demo class work 02
+Invoking: GCC C++ Linker
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
+ 
