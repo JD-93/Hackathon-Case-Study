@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+using namespace std;
+
+
+#ifndef ROUND_1_CSV_CREATOR_H_
+#define ROUND_1_CSV_CREATOR_H_
+
+void round_1_csv_students()
+{
+
+		ofstream out ;
+		out.open("students_rnd_1.csv") ;
+
+		 out<<stu[0].getFormNo() <<"," ;
+		 out<<stu[0].getName() <<"," ;
+		 out<<stu[0].getRankA()<<"\n" ;
+		 out<<stu[0].getRankB()<<"\n" ;
+		 out<<stu[0].getRankC()<<"," ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+#endif /* ROUND_1_CSV_CREATOR_H_ */

@@ -1,0 +1,3 @@
+src/course.o: ../src/course.cpp ../src/course.h
+
+../src/course.h:

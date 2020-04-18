@@ -1,0 +1,18 @@
+13:03:15 **** Incremental Build of configuration Debug for project demo ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:15: error: invalid initialization of reference of type ‘std::vector<dept>&’ from expression of type ‘std::vector<emp>’
+   92 |  load_emp_csv(emps) ;
+      |               ^~~~
+../src/main.cpp:62:33: note: in passing argument 1 of ‘void load_emp_csv(std::vector<dept>&)’
+   62 | void load_emp_csv(vector<dept> &emps)
+      |                   ~~~~~~~~~~~~~~^~~~
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+13:03:17 Build Failed. 3 errors, 0 warnings. (took 1s.63ms)
+

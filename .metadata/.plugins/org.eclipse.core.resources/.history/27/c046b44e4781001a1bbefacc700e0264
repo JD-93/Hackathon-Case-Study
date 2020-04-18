@@ -1,0 +1,98 @@
+#include <sstream>
+#include <vector>
+#include <algorithm>
+#include <iomanip>
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+
+class emp
+{
+public :
+	string emp_no,name,sal,deptno ;
+	void display()
+	{
+		cout<<emp_no<<","<<name<<","<<sal<<","<<deptno<<endl ;
+	}
+};
+class dept
+{
+public :
+	string dept_no,name,city ;
+	vector<emp>  emps ;
+	void display()
+	{
+		cout<<dept_no<<","<<name<<","<<city<<endl ;
+
+	}
+};
+
+void load_dept_csv(vector<dept> &depts)
+{
+	ifstream fin ;
+	fin.open("dept.csv") ;
+
+	string line ;
+
+	while(getline(fin,line)){
+		stringstream ss(line) ;
+
+		string token[3] ;
+		for (size_t i=0 ; i<3 ; i++)
+		getline(ss,token[i],',') ;
+
+		dept obj ;
+		obj.dept_no = token[0] ;
+		obj.name = token[1] ;
+		obj.city  = token[2] ;
+
+
+		depts.push_back(obj) ;
+	}
+}
+dept * find_dept(vector <dept> depts, string deptno)
+{
+	for (size_t i=0 ; i<depts.size() ; i++ ){
+		if (depts[i].dept_no == deptno)
+			return &depts[i] ;
+	}
+	return NULL ;
+}
+void load_emp_csv(vector<dept> &emps)
+{
+	ifstream fin ;
+	fin.open("emp.csv") ;
+
+	string line ;
+
+	while(getline(fin,line)){
+		stringstream ss(line) ;
+
+		string token[4] ;
+		for (size_t i=0 ; i<4 ; i++)
+		getline(ss,token[i],',') ;
+
+		emp obj ;
+		obj.emp_no = token[0] ;
+		obj.name = token[1] ;
+		obj.sal  = token[2] ;
+		obj.deptno = token[3] ;
+
+		obj.display() ;
+	}
+}
+int main() {
+
+	vector <dept> depts ;
+	load_dept_csv(depts) ;
+
+
+	vector <emp> emps ;
+	load_emp_csv(emps) ;
+
+
+
+
+}
+

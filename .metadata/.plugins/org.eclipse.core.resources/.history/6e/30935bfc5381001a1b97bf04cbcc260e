@@ -1,0 +1,113 @@
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+using namespace std;
+#include <vector>
+
+class emp
+{
+public :
+	string emp_no,name,sal,dept_no ;
+	void display()
+	{
+		cout<<emp_no<<","<<name<<","<<sal<<","<<dept_no<<endl ;
+	}
+};
+
+class dept
+{
+public:
+	string dept_no,dept_name,city ;
+	vector <emp> emps ;
+	void display()
+	{
+		cout<<dept_no<<","<<dept_name<<","<<city<<endl ;
+		for (size_t i=0 ; i<emps.size() ; i++ ){
+			cout<<"\t-" ;
+			emps[i].display() ;
+		}
+	}
+};
+dept * find_dept(vector<dept>&depts,string deptno)
+{
+	for (size_t i=0 ; i<depts.size() ; i++ ){
+		if (depts[i].dept_no == deptno)
+			return &depts[i] ;
+	}
+	return NULL ;
+}
+void load_emp_csv(vector <dept> &depts)
+{
+	ifstream fin("emp.csv") ;
+	string line ;
+
+	while(getline(fin,line)){
+		stringstream ss(line) ;
+
+		string token[4] ;
+		for (int i=0 ; i<4 ; i++ )
+			getline(ss,token[i],',') ;
+
+		emp obj ;
+		obj.emp_no = token[0] ;
+		obj.name = token[1] ;
+		obj.sal = token[2] ;
+		obj.dept_no = token[3] ;
+
+		dept * d = find_dept(depts,obj.dept_no) ;
+		d->emps.push_back(obj) ;
+
+	}
+}
+void load_dept_cvs(vector <dept> &depts)
+{
+	ifstream fin("dept.csv") ;
+	string line ;
+
+	while(getline(fin,line)){
+		stringstream ss(line) ;
+
+		string token[3] ;
+		for (int i=0 ; i<3 ; i++ )
+			getline(ss,token[i],',') ;
+
+		dept obj ;
+		obj.dept_no = token[0] ;
+		obj.dept_name = token[1] ;
+		obj.city = token[2] ;
+
+		depts.push_back(obj) ;
+
+	}
+}
+int main()
+{
+
+/*
+	vector <emp> emps ;
+	load_emp_csv(emps) ;
+	cout<<"size of emps : "<<emps.size()<<endl ;
+	for (size_t i=0 ; i<emps.size() ; i++ )
+		emps[i].display() ;
+
+
+	vector <dept> depts ;
+	load_dept_cvs(depts) ;
+	cout<<"size of depts : "<<depts.size()<<endl ;
+	for (size_t i=0 ; i<depts.size() ; i++ )
+		depts[i].display() ;
+*/
+
+	vector <dept> depts ;
+	load_dept_cvs(depts) ;
+	load_emp_csv(depts) ;
+	cout<<"size of depts : "<<depts.size()<<endl ;
+	for (size_t i=0 ; i<depts.size() ; i++ )
+		depts[i].display() ;
+
+
+
+	return 0 ;
+}

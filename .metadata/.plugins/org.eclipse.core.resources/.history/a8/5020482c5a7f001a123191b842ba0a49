@@ -1,0 +1,201 @@
+
+#include <iostream>
+using namespace std;
+#include <vector>
+#include "students.h"
+#include "get_student_object.h"
+#include "course.h"
+#include "get_course_object.h"
+#include "center.h"
+#include "get_center_object.h"
+#include "capacities.h"
+#include "get_capacities_obj.h"
+#include "eligibility.h"
+#include "get_eligibilyt_obj.h"
+#include "preferences.h"
+#include "get_preference_obj.h"
+#include "customized_sortin_and_extra_algo_for_vector.h"
+int main() {
+
+
+
+
+	vector <students> stu = get_stu_obj() ;
+	/*
+	for (int i=0 ; i<stu.size(); i++ ){
+		stu[i].display() ;
+	}
+
+	 */
+	vector <course_eli> course  = get_course_obj() ;
+	/*
+	for (int i=0 ; i<course.size() ; i++ ){
+		course[i].display() ;
+	}
+
+	vector<center> center = get_center_obj() ;
+	for (int i=0 ; i<center.size() ; i++ ){
+		center[i].display() ;
+	}
+
+
+
+	 */
+	vector <capacities> capacities = get_capacity_obj() ;
+	/*	for (int i= 0 ; i<capacities.size(); i++ ){
+		capacities[i].display() ;
+	}
+
+
+
+	 */
+	vector<eligibility> eligiblities = get_eligibilty_obj() ;
+	/*	for (int i= 0 ; i<eligiblities.size(); i++ ){
+		eligiblities[i].display() ;
+	}
+
+	 */
+	vector<preferences> pref = get_prefrences_obj() ;
+	/*
+	for (int i= 0 ; i<pref.size() ;i++) {
+		pref[i].display() ;
+	}
+	 */
+
+
+	int count = 0 ;
+
+	// sort stundet by A,B,C rank ;
+	sort(stu.begin(),stu.end(),sort_by_A) ;   // ---> soritng is working perfectly
+
+
+	for (size_t i=0 ; i<stu.size() ; i++ ){
+
+		vector<preferences>::iterator PREF ;
+		PREF = pref.begin() ;
+		while (PREF != pref.end()){
+			//=======================
+
+
+			//=======================
+
+			PREF->getCenterId() ;
+			PREF->getCourseName() ;
+
+	/*		vector<capacity_class>::iterator CAPACITY ;
+			CAPACITY = capacities.begin() ;
+
+			while ((CAPACITY != capacities.end())&&(CAPACITY->getFilledCapacity()!=CAPACITY->getMaxCapacity())) {
+
+				if ((PREF->getCenterId()==CAPACITY->getCenterId())&&
+						(PREF->getCourseName()==CAPACITY->getCourseName())){
+
+					vector<eligibility>::iterator ELIGIBLE ;
+					ELIGIBLE = eligiblities.begin() ;
+
+					while ((ELIGIBLE!=eligiblities.end())&&(stu[i].getDegree()==ELIGIBLE->getEligibilitys())){
+						// add condition for markas as well
+
+						//=====================================================================================================
+
+						//=============================================================================================================
+
+
+						ELIGIBLE++ ;
+					}
+
+				}
+
+				CAPACITY++ ;
+			}
+*/
+			PREF++ ;
+		}
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*
+
+//	for (size_t i=0 ; i<stu.size() ; i++ )
+	{
+		int i=32 ;
+		stu[i].display() ;
+		vector<preferences>::iterator PREF ;
+		PREF = pref.begin() ;
+
+		while (PREF != pref.end()){
+
+			PREF->getCenterId() ;
+			PREF->getCourseName() ;
+
+			vector<capacity_class>::iterator CAPACITY ;
+			CAPACITY = capacities.begin() ;
+
+			while (CAPACITY != capacities.end()) {
+
+				if ((PREF->getCenterId()==CAPACITY->getCenterId())&&
+						(PREF->getCourseName()==CAPACITY->getCourseName())&&
+						(CAPACITY->getMaxCapacity()==CAPACITY->getFilledCapacity())){
+
+					break ;
+				}
+
+				if ((PREF->getFormNo() == stu[i].getFormNo())&&
+						(stu[i].getAllocCentId() == "NA")) {
+
+					stu[i].setAllocPref(PREF->getPrefNo()) ;
+					stu[i].setAllocCourse(PREF->getCourseName()) ;
+					stu[i].setAllocCentId(PREF->getCenterId()) ;
+					stu[i].display() ;
+
+					break ;
+				}
+
+				PREF++ ;
+			}
+			CAPACITY++ ;
+		}
+	}
+
+
+
+
+
+	 */
+
+
+
+
+
+	for (int i= 0 ; i<capacities.size(); i++ ){
+		capacities[i].display() ;
+	}
+
+
+/*
+
+	cout<<"\n\n\ntotal count "<<count <<endl ;
+	for (int i=0 ; i<stu.size(); i++ ){
+		stu[i].display() ;
+	}
+
+*/
+
+	return 0 ;
+}

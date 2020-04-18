@@ -1,0 +1,53 @@
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+using namespace std;
+#include <vector>
+
+class emp
+{
+public :
+	string emp_no,name,sal,dept_no ;
+	void display()
+	{
+		cout<<emp_no<<","<<name<<","<<sal<<","<<dept_no<<endl ;
+	}
+};
+
+void load_emp_csv(vector <emp> &emps)
+{
+	ifstream fin("emp.csv") ;
+	string line ;
+
+	while(getline(fin,line)){
+		stringstream ss(line) ;
+
+		string token[4] ;
+		for (int i=0 ; i<4 ; i++ )
+			getline(ss,token[i],',') ;
+
+		emp obj ;
+		obj.emp_no = token[0] ;
+		obj.name = token[1] ;
+		obj.sal = token[2] ;
+		obj.dept_no = token[3] ;
+
+		emps.push_back(obj) ;
+
+	}
+}
+int main()
+{
+
+	vector <emp> emps ;
+	load_emp_csv(emps) ;
+	cout<<"size of emps : "<<emps.size()<<endl ;
+	for (size_t i=0 ; i<emps.size() ; i++ )
+		emps[i].display() ;
+
+
+
+	return 0 ;
+}

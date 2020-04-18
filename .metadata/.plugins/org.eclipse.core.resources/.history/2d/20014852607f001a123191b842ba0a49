@@ -1,0 +1,58 @@
+
+#include <iostream>
+using namespace std;
+#include <vector>
+#include "students.h"
+#include "get_student_object.h"
+#include "course.h"
+#include "get_course_object.h"
+#include "center.h"
+#include "get_center_object.h"
+#include "capacities.h"
+#include "get_capacities_obj.h"
+#include "eligibility.h"
+#include "get_eligibilyt_obj.h"
+#include "preferences.h"
+#include "get_preference_obj.h"
+#include "customized_sortin_and_extra_algo_for_vector.h"
+int main() {
+
+
+
+
+	vector <students> stu = get_stu_obj() ;
+	vector <course_eli> course  = get_course_obj() ;
+	vector<center> center = get_center_obj() ;
+	vector <capacities> capacities = get_capacity_obj() ;
+	vector<eligibility> eligiblities = get_eligibilty_obj() ;
+	vector<preferences> pref = get_prefrences_obj() ;
+
+	// sort stundet by A,B,C rank ;
+	sort(stu.begin(),stu.end(),sort_by_A) ;   // ---> soritng is working perfectly
+
+//==================================================================
+	vector<students>::iterator STU = stu.begin() ;
+	vector<preferences>::iterator PREF = pref.begin() ;
+	vector<capacity_class>::iterator CAPACITY = capacities.begin() ;
+	vector<course_eli>::iterator COURSES = course.begin() ;
+	vector<eligibility>::iterator ELIGIBLE = eligiblities.begin() ;
+//=========================================================================
+
+
+
+
+
+
+
+
+	for (size_t i= 0 ; i<capacities.size(); i++ ){
+		capacities[i].display() ;
+	}
+
+	for (size_t i=0 ; i<stu.size(); i++ ){
+		stu[i].display() ;
+	}
+
+
+	return 0 ;
+}

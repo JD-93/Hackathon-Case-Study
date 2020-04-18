@@ -1,0 +1,42 @@
+18:08:56 **** Incremental Build of configuration Debug for project 04 ****
+make all 
+Building target: 04
+Invoking: GCC C++ Linker
+g++  -o "04"  ./src/04.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o   
+./src/04.o: In function `get_stu_obj()':
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:21: undefined reference to `students::students()'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:30: undefined reference to `students::setFormNo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+makefile:45: recipe for target '04' failed
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:33: undefined reference to `students::setName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:36: undefined reference to `students::setRankA(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:40: undefined reference to `students::setRankB(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:44: undefined reference to `students::setRankC(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:48: undefined reference to `students::setDegree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:51: undefined reference to `students::setPercentage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:54: undefined reference to `students::setAllocPref(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:57: undefined reference to `students::setAllocCourse(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:60: undefined reference to `students::setAllocCentId(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:63: undefined reference to `students::setPayment(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:66: undefined reference to `students::setReportCenter(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:69: undefined reference to `students::setPrn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:21: undefined reference to `students::~students()'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/get_student_object.h:21: undefined reference to `students::~students()'
+./src/04.o: In function `sort_by_A(students, students)':
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/customized_sortin_and_extra_algo_for_vector.h:10: undefined reference to `students::getRankA[abi:cxx11]() const'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/customized_sortin_and_extra_algo_for_vector.h:11: undefined reference to `students::getRankA[abi:cxx11]() const'
+./src/04.o: In function `sort_by_B(students, students)':
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/customized_sortin_and_extra_algo_for_vector.h:18: undefined reference to `students::getRankB[abi:cxx11]() const'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/customized_sortin_and_extra_algo_for_vector.h:19: undefined reference to `students::getRankB[abi:cxx11]() const'
+./src/04.o: In function `sort_by_C(students, students)':
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/customized_sortin_and_extra_algo_for_vector.h:25: undefined reference to `students::getRankC[abi:cxx11]() const'
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/04/Debug/../src/customized_sortin_and_extra_algo_for_vector.h:26: undefined reference to `students::getRankC[abi:cxx11]() const'
+./src/04.o: In function `void __gnu_cxx::new_allocator<students>::destroy<students>(students*)':
+/usr/include/c++/9/ext/new_allocator.h:153: undefined reference to `students::~students()'
+./src/04.o: In function `void std::_Destroy<students>(students*)':
+/usr/include/c++/9/bits/stl_construct.h:98: undefined reference to `students::~students()'
+collect2: error: ld returned 1 exit status
+make: *** [04] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:08:57 Build Failed. 26 errors, 0 warnings. (took 339ms)
+

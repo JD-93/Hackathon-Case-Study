@@ -1,0 +1,27 @@
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+using namespace std;
+#include <vector>
+
+class emp
+{
+public :
+	string emp_no,name,sal,dept_no ;
+	void display()
+	{
+		cout<<emp_no<<","<<name<<","<<sal<<","<<dept_no<<endl ;
+	}
+};
+
+
+int main()
+{
+
+	vec
+
+
+	return 0 ;
+}

@@ -1,0 +1,72 @@
+#include <sstream>
+#include <vector>
+#include <algorithm>
+#include <iomanip>
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+
+class emp
+{
+public :
+	string emp_no,name,sal,deptno ;
+	void display()
+	{
+		cout<<emp_no<<","<<name<<","<<sal<<","<<deptno<<endl ;
+	}
+};
+class dept
+{
+public :
+	string dept_no,name,city ;
+	vector<emp>  emps ;
+	void display()
+	{
+		cout<<dept_no<<","<<name<<","<<city<<endl ;
+		cout<<" \t- " ;
+		for (size_t i=0 ; i<this->emps.size() ; i++ ){
+			//emps[i].display() ;
+		}
+	}
+};
+
+void load_dept_csv(vector<dept> &depts)
+{
+	ifstream fin ;
+	fin.open("dept.csv") ;
+
+	string line ;
+
+	while(getline(fin,line)){
+		stringstream ss(line) ;
+
+		string token[3] ;
+		for (size_t i=0 ; i<3 ; i++)
+		getline(ss,token[i],',') ;
+
+		dept obj ;
+		obj.dept_no = token[0] ;
+		obj.name = token[1] ;
+		obj.city  = token[2] ;
+
+		obj.display() ;
+		depts.push_back(obj) ;
+	}
+}
+
+int main() {
+
+	vector <dept> depts ;
+	load_dept_csv(depts) ;
+	cout<<"size of depts is : "<<depts.size()<<endl;
+	for (size_t i=0 ; i<depts.size(); i++ )
+		depts[i].display( ) ;
+
+
+
+
+
+
+}
+
