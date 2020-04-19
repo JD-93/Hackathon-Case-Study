@@ -218,3 +218,26 @@ void Admission_System::load_centers_csv(vector<center> &centers) {
 		centers.push_back(c) ;
 	}
 }
+
+/* linking of center and capacity
+	 * map <string,string> center_map ;
+			// key : course no
+			// value : index of capacity    */
+void Admission_System::link_course_capacity_center(vector<center> &centers,
+		vector<capacity> &capacities, vector<course>&courses) {
+
+	for (size_t i=0 ; i<centers.size() ; i++ ){
+		for (size_t k=0 ; k<courses.size() ; k++ ){
+			for (size_t j=0 ; j<capacities.size() ; j++ ){
+
+				if (centers[i].ceter_id == capacities[j].cent_id){
+					if (capacities[j].course_name == courses[k].course_name){
+						centers[i].center_map[courses[k].course_id] = to_string(j) ;
+					}
+				}
+
+			}
+		}
+	}
+
+}

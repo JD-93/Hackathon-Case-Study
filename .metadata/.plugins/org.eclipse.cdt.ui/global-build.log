@@ -1,1039 +1,407 @@
-14:11:17 **** Clean-only build of configuration Debug for project 01 ****
+20:51:42 **** Clean-only build of configuration Debug for project 99 ****
 make clean 
-rm -rf  ./src/01.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o  ./src/01.d ./src/capacities.d ./src/center.d ./src/course.d ./src/eligibility.d ./src/preferences.d ./src/students.d  01
+rm -rf  ./src/99.o  ./src/99.d  99
  
-14:11:45 **** Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-In file included from ../src/students.cpp:8:
-../src/students.h:8:2: error: ‘string’ does not name a type
-src/subdir.mk:28: recipe for target 'src/students.o' failed
-    8 |  string form_no, name, rank_A, rank_B, rank_C ;
-      |  ^~~~~~
-../src/students.h:9:3: error: ‘string’ does not name a type
-    9 |   string degree,percentage ;
-      |   ^~~~~~
-../src/students.h:10:3: error: ‘string’ does not name a type
-   10 |   string alloc_pref, alloc_course,alloc_cent_id  ;
-      |   ^~~~~~
-../src/students.h:11:3: error: ‘string’ does not name a type
-   11 |   string payment , report_center;
-      |   ^~~~~~
-../src/students.h:12:3: error: ‘string’ does not name a type
-   12 |   string prn ;
-      |   ^~~~~~
-make: *** [src/students.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-14:11:53 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-In file included from ../src/students.cpp:8:
-../src/students.h:8:2: error: ‘string’ does not name a type
-    8 |  string form_no, name, rank_A, rank_B, rank_C ;
-      |  ^~~~~~
-../src/students.h:9:2: error: ‘string’ does not name a type
-    9 |  string degree,percentage ;
-      |  ^~~~~~
-../src/students.h:10:2: error: ‘string’ does not name a type
-   10 |  string alloc_pref, alloc_course,alloc_cent_id  ;
-      |  ^~~~~~
-../src/students.h:11:2: error: ‘string’ does not name a type
-   11 |  string payment , report_center;
-      |  ^~~~~~
-src/subdir.mk:28: recipe for target 'src/students.o' failed
-../src/students.h:12:2: error: ‘string’ does not name a type
-   12 |  string prn ;
-      |  ^~~~~~
-make: *** [src/students.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-14:13:06 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-In file included from ../src/students.cpp:2:
-../src/students.h:8:2: error: ‘string’ does not name a type
-    8 |  string form_no, name, rank_A, rank_B, rank_C ;
-      |  ^~~~~~
-../src/students.h:9:2: error: ‘string’ does not name a type
-    9 |  string degree,percentage ;
-src/subdir.mk:28: recipe for target 'src/students.o' failed
-      |  ^~~~~~
-../src/students.h:10:2: error: ‘string’ does not name a type
-   10 |  string alloc_pref, alloc_course,alloc_cent_id  ;
-      |  ^~~~~~
-../src/students.h:11:2: error: ‘string’ does not name a type
-   11 |  string payment , report_center;
-      |  ^~~~~~
-../src/students.h:12:2: error: ‘string’ does not name a type
-   12 |  string prn ;
-      |  ^~~~~~
-make: *** [src/students.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-14:13:33 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-Finished building: ../src/students.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/students.o   
-Finished building target: as per lectures
- 
-14:13:42 **** Incremental Build of configuration Debug for project as per lectures ****
+20:58:20 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
 make: Nothing to be done for 'all'.
-14:14:02 **** Incremental Build of configuration Debug for project as per lectures ****
+20:58:20 **** Incremental Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/as per lectures.cpp
+make: Nothing to be done for 'all'.
+20:58:26 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+20:58:39 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+21:02:26 **** Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:55 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-In file included from ../src/students.cpp:2:
-../src/students.h:8:2: error: ‘string’ does not name a type
-    8 |  string form_no, name, rank_A, rank_B, rank_C ;
-      |  ^~~~~~
-../src/students.h:9:2: error: ‘string’ does not name a type
-    9 |  string degree,percentage ;
-src/subdir.mk:28: recipe for target 'src/students.o' failed
-      |  ^~~~~~
-../src/students.h:10:2: error: ‘string’ does not name a type
-   10 |  string alloc_pref, alloc_course,alloc_cent_id  ;
-      |  ^~~~~~
-../src/students.h:11:2: error: ‘string’ does not name a type
-   11 |  string payment , report_center;
-      |  ^~~~~~
-../src/students.h:12:2: error: ‘string’ does not name a type
-   12 |  string prn ;
-      |  ^~~~~~
-make: *** [src/students.o] Error 1
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp:222:6: error: no declaration matches ‘void Admission_System::link_course_capacity(std::vector<center>&, std::vector<capacity>&)’
+  222 | void Admission_System::link_course_capacity(vector<center> &centers, vector<capacity> &capacities) {
+      |      ^~~~~~~~~~~~~~~~
+In file included from ../src/AdmissionSystem.cpp:2:
+../src/AdmissionSystem.h:45:7: note: candidate is: ‘void Admission_System::link_course_capacity(std::vector<center>&, std::vector<capacity>&, std::vector<course>&)’
+   45 |  void link_course_capacity(vector<center>&centers,vector<capacity>&capacities,
+      |       ^~~~~~~~~~~~~~~~~~~~
+../src/AdmissionSystem.h:25:7: note: ‘class Admission_System’ defined here
+   25 | class Admission_System {
+      |       ^~~~~~~~~~~~~~~~
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:39: recipe for target 'src/AdmissionSystem.o' failed
 "make all" terminated with exit code 2. Build might be incomplete.
-14:16:11 **** Incremental Build of configuration Debug for project as per lectures ****
+21:10:56 **** Build of configuration Debug for project demo class work 02 ****
 make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-Finished building: ../src/students.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/students.o   
-Finished building target: as per lectures
- 
-14:19:34 **** Incremental Build of configuration Debug for project as per lectures ****
+make: Nothing to be done for 'all'.
+21:12:26 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
-Building file: ../src/as per lectures.cpp
+Building file: ../src/AdmissionSystem.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/student.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.cpp"
-Finished building: ../src/student.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/student.o   
-Finished building target: as per lectures
- 
-14:28:03 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-../src/as per lectures.cpp: In function ‘void load_students_csv(std::vector<student>&)’:
-../src/as per lectures.cpp:24:17: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   24 |   s.form_no(temp) ;
-      |                 ^
-../src/as per lectures.cpp:27:14: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   27 |   s.name(temp) ;
-      |              ^
-../src/as per lectures.cpp:30:16: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   30 |   s.rank_A(temp) ;
-      |                ^
-../src/as per lectures.cpp:33:16: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   33 |   s.rank_B(temp) ;
-      |                ^
-../src/as per lectures.cpp:36:16: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   36 |   s.rank_C(temp) ;
-      |                ^
-../src/as per lectures.cpp:39:16: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   39 |   s.degree(temp) ;
-      |                ^
-../src/as per lectures.cpp:42:20: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (std::string&)’
-   42 |   s.percentage(temp) ;
-      |                    ^
-../src/as per lectures.cpp:45:20: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (const char [3])’
-   45 |   s.alloc_pref("NA") ;
-      |                    ^
-../src/as per lectures.cpp:48:22: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (const char [3])’
-   48 |   s.alloc_course("NA") ;
-      |                      ^
-../src/as per lectures.cpp:51:23: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (const char [3])’
-   51 |   s.alloc_cent_id("NA") ;
-      |                       ^
-../src/as per lectures.cpp:54:17: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (const char [3])’
-   54 |   s.payment("NA") ;
-      |                 ^
-../src/as per lectures.cpp:57:23: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (const char [3])’
-   57 |   s.report_center("NA") ;
-      |                       ^
-../src/as per lectures.cpp:60:13: error: no match for call to ‘(std::string {aka std::__cxx11::basic_string<char>}) (const char [3])’
-   60 |   s.prn("NA") ;
-      |             ^
-src/subdir.mk:21: recipe for target 'src/as per lectures.o' failed
-make: *** [src/as per lectures.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-14:29:57 **** Build of configuration Debug for project 01 ****
-make all 
-Building file: ../src/01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01.d" -MT"src/01.o" -o "src/01.o" "../src/01.cpp"
-../src/01.cpp: In function ‘int main()’:
-../src/01.cpp:301:16: warning: format ‘%[^
-   ’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
-  301 |     scanf(" %[^\n]s",&degrees);
-      |             ~~~^~    ~~~~~~~~
-      |                |     |
-      |                char* char (*)[20]
-Finished building: ../src/01.cpp
- 
-Building file: ../src/capacities.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capacities.d" -MT"src/capacities.o" -o "src/capacities.o" "../src/capacities.cpp"
-Finished building: ../src/capacities.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
  
 Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
 Finished building: ../src/center.cpp
  
-Building file: ../src/course.cpp
+Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
-Finished building: ../src/course.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
  
-Building file: ../src/eligibility.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eligibility.d" -MT"src/eligibility.o" -o "src/eligibility.o" "../src/eligibility.cpp"
-Finished building: ../src/eligibility.cpp
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
  
+21:13:23 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:24 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:24 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:33 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:37 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:43 **** Incremental Build of configuration Debug for project 01 ****
+make all 
 Building file: ../src/preferences.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preferences.d" -MT"src/preferences.o" -o "src/preferences.o" "../src/preferences.cpp"
 Finished building: ../src/preferences.cpp
- 
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-../src/students.cpp: In member function ‘void students::accept()’:
-../src/students.cpp:163:13: warning: format ‘%[^
-   ’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
-  163 |  scanf(" %[^\n]s",&degrees);
-      |          ~~~^~    ~~~~~~~~
-      |             |     |
-      |             char* char (*)[20]
-Finished building: ../src/students.cpp
  
 Building target: 01
 Invoking: GCC C++ Linker
 g++  -o "01"  ./src/01.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o   
 Finished building target: 01
  
-14:30:02 **** Clean-only build of configuration Debug for project 01 demo ****
-make clean 
-rm -rf  ./src/02.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o  ./src/02.d ./src/capacities.d ./src/center.d ./src/course.d ./src/eligibility.d ./src/preferences.d ./src/students.d  demo2
- 
-14:30:03 **** Build of configuration Debug for project 01 demo ****
+21:14:23 **** Incremental Build of configuration Debug for project 01 ****
 make all 
-Building file: ../src/02.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02.d" -MT"src/02.o" -o "src/02.o" "../src/02.cpp"
-../src/02.cpp: In function ‘int main()’:
-../src/02.cpp:23:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<students>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   23 |  for (int i=0 ; i<stu.size(); i++ ){
-      |                 ~^~~~~~~~~~~
-Finished building: ../src/02.cpp
- 
-Building file: ../src/capacities.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capacities.d" -MT"src/capacities.o" -o "src/capacities.o" "../src/capacities.cpp"
-Finished building: ../src/capacities.cpp
- 
-Building file: ../src/center.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
-Finished building: ../src/center.cpp
- 
-Building file: ../src/course.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
-../src/course.cpp: In constructor ‘course::course()’:
-../src/course.cpp:11:14: warning: passing NULL to non-pointer argument 2 of ‘void* memset(void*, int, size_t)’ [-Wconversion-null]
-   11 |  memset(this,NULL,sizeof(course)) ;
-      |              ^~~~
-In file included from /usr/include/c++/9/cstring:42,
-                 from ../src/course.cpp:9:
-/usr/include/string.h:60:37: note:   declared here
-   60 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
-      |                                 ~~~~^~~
-../src/course.cpp:11:33: warning: ‘void* memset(void*, int, size_t)’ clearing an object of type ‘class course’ with no trivial copy-assignment; use assignment or value-initialization instead [-Wclass-memaccess]
-   11 |  memset(this,NULL,sizeof(course)) ;
-      |                                 ^
-In file included from ../src/course.cpp:8:
-../src/course.h:8:7: note: ‘class course’ declared here
-    8 | class course {
-      |       ^~~~~~
-Finished building: ../src/course.cpp
- 
-Building file: ../src/eligibility.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eligibility.d" -MT"src/eligibility.o" -o "src/eligibility.o" "../src/eligibility.cpp"
-Finished building: ../src/eligibility.cpp
- 
 Building file: ../src/preferences.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preferences.d" -MT"src/preferences.o" -o "src/preferences.o" "../src/preferences.cpp"
 Finished building: ../src/preferences.cpp
  
-Building file: ../src/students.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/students.d" -MT"src/students.o" -o "src/students.o" "../src/students.cpp"
-../src/students.cpp: In constructor ‘students::students()’:
-../src/students.cpp:11:14: warning: passing NULL to non-pointer argument 2 of ‘void* memset(void*, int, size_t)’ [-Wconversion-null]
-   11 |  memset(this,NULL,sizeof(students) ) ;
-      |              ^~~~
-In file included from /usr/include/c++/9/cstring:42,
-                 from ../src/students.cpp:7:
-/usr/include/string.h:60:37: note:   declared here
-   60 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
-      |                                 ~~~~^~~
-../src/students.cpp:11:36: warning: ‘void* memset(void*, int, size_t)’ clearing an object of type ‘class students’ with no trivial copy-assignment; use assignment or value-initialization instead [-Wclass-memaccess]
-   11 |  memset(this,NULL,sizeof(students) ) ;
-      |                                    ^
-In file included from ../src/students.cpp:8:
-../src/students.h:8:7: note: ‘class students’ declared here
-    8 | class students {
-      |       ^~~~~~~~
-Finished building: ../src/students.cpp
- 
-Building target: 01 demo
+Building target: 01
 Invoking: GCC C++ Linker
-g++  -o "01 demo"  ./src/02.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o   
-Finished building target: 01 demo
+g++  -o "01"  ./src/01.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o   
+Finished building target: 01
  
-14:30:07 **** Incremental Build of configuration Debug for project as per lectures ****
+21:16:15 **** Build of configuration Debug for project 99 ****
 make all 
-Building file: ../src/as per lectures.cpp
+Building file: ../src/99.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/99.d" -MT"src/99.o" -o "src/99.o" "../src/99.cpp"
+Finished building: ../src/99.cpp
  
-Building file: ../src/student.cpp
+Building target: 99
+Invoking: GCC C++ Linker
+g++  -o "99"  ./src/99.o   
+Finished building target: 99
+ 
+21:16:42 **** Incremental Build of configuration Debug for project 99 ****
+make all 
+Building file: ../src/99.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.cpp"
-Finished building: ../src/student.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/99.d" -MT"src/99.o" -o "src/99.o" "../src/99.cpp"
+../src/99.cpp: In function ‘int main()’:
+../src/99.cpp:82:15: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<dept>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   82 |  for(int i=0;i<depts.size();i++)
+      |              ~^~~~~~~~~~~~~
+Finished building: ../src/99.cpp
+ 
+Building target: 99
+Invoking: GCC C++ Linker
+g++  -o "99"  ./src/99.o   
+Finished building target: 99
+ 
+21:16:52 **** Incremental Build of configuration Debug for project 99 ****
+make all 
+make: Nothing to be done for 'all'.
+21:16:54 **** Incremental Build of configuration Debug for project 99 ****
+make all 
+make: Nothing to be done for 'all'.
+21:22:17 **** Incremental Build of configuration Debug for project 99 ****
+make all 
+Building file: ../src/99.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/99.d" -MT"src/99.o" -o "src/99.o" "../src/99.cpp"
+../src/99.cpp: In function ‘int main()’:
+../src/99.cpp:83:15: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<dept>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   83 |  for(int i=0;i<depts.size();i++)
+      |              ~^~~~~~~~~~~~~
+Finished building: ../src/99.cpp
+ 
+Building target: 99
+Invoking: GCC C++ Linker
+g++  -o "99"  ./src/99.o   
+Finished building target: 99
+ 
+21:23:27 **** Incremental Build of configuration Debug for project 99 ****
+make all 
+Building file: ../src/99.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/99.d" -MT"src/99.o" -o "src/99.o" "../src/99.cpp"
+../src/99.cpp: In function ‘int main()’:
+../src/99.cpp:84:15: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<dept>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   84 |  for(int i=0;i<depts.size();i++)
+      |              ~^~~~~~~~~~~~~
+Finished building: ../src/99.cpp
+ 
+Building target: 99
+Invoking: GCC C++ Linker
+g++  -o "99"  ./src/99.o   
+Finished building target: 99
+ 
+21:26:24 **** Incremental Build of configuration Debug for project 99 ****
+make all 
+Building file: ../src/99.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/99.d" -MT"src/99.o" -o "src/99.o" "../src/99.cpp"
+../src/99.cpp: In function ‘int main()’:
+../src/99.cpp:82:15: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<dept>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   82 |  for(int i=0;i<depts.size();i++)
+      |              ~^~~~~~~~~~~~~
+Finished building: ../src/99.cpp
+ 
+Building target: 99
+Invoking: GCC C++ Linker
+g++  -o "99"  ./src/99.o   
+Finished building target: 99
+ 
+22:30:19 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
  
 Building target: as per lectures
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/student.o   
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
-14:30:08 **** Incremental Build of configuration Debug for project demo class work 01 ****
+22:34:14 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+../src/demo class work 02.cpp:16:13: error: expected constructor, destructor, or type conversion before ‘(’ token
+   16 | load_emp_csv(depts) ;
+      |             ^
+src/subdir.mk:18: recipe for target 'src/demo class work 02.o' failed
+make: *** [src/demo class work 02.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:34:35 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
+ 
+Building target: demo class work 02
+Invoking: GCC C++ Linker
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
+ 
+22:35:17 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:35:55 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:40:02 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:43:32 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:26:54: error: conversion from ‘std::__cxx11::basic_string<char>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >’} to non-scalar type ‘std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >’} requested
+   26 |  map<string,string> :: iterator itr = cent_addr.begin() ;
+      |                                       ~~~~~~~~~~~~~~~^~
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+make: *** [src/center.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:45:11 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:26:32: error: expected unqualified-id before ‘=’ token
+   26 |  map<string,string> ::iterator = itr ;
+      |                                ^
+make: *** [src/center.o] Error 1
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:45:12 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:16 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:26:32: error: expected unqualified-id before ‘=’ token
+   26 |  map<string,string> ::iterator = itr ;
+      |                                ^
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+make: *** [src/center.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:45:21 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:45:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:26:53: error: conversion from ‘std::__cxx11::basic_string<char>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >’} to non-scalar type ‘std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >’} requested
+   26 |  map<string,string> ::iterator itr = cent_addr.begin() ;
+      |                                      ~~~~~~~~~~~~~~~^~
+make: *** [src/center.o] Error 1
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:46:37 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:46:42 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:28:30: error: no match for ‘operator=’ (operand types are ‘std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >’} and ‘std::__cxx11::basic_string<char>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >’})
+   28 |  itr = this->cent_addr.begin() ;
+      |                              ^
+In file included from /usr/include/c++/9/map:60,
+                 from ../src/center.h:10,
+                 from ../src/center.cpp:8:
+/usr/include/c++/9/bits/stl_tree.h:256:12: note: candidate: ‘constexpr std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >& std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::operator=(const std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&)’
+  256 |     struct _Rb_tree_iterator
+      |            ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/stl_tree.h:256:12: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >’} to ‘const std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&’
+/usr/include/c++/9/bits/stl_tree.h:256:12: note: candidate: ‘constexpr std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >& std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::operator=(std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&&)’
+/usr/include/c++/9/bits/stl_tree.h:256:12: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >’} to ‘std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >&&’
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+make: *** [src/center.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:46:50 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:27:59: error: conversion from ‘std::__cxx11::basic_string<char>::iterator’ {aka ‘__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >’} to non-scalar type ‘std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >::iterator’ {aka ‘std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >’} requested
+   27 |  map<string,string> ::iterator itr = this->cent_addr.begin() ;
+      |                                      ~~~~~~~~~~~~~~~~~~~~~^~
+make: *** [src/center.o] Error 1
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:47:03 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display()’:
+../src/center.cpp:27:32: warning: variable ‘itr’ set but not used [-Wunused-but-set-variable]
+   27 |  map<string,string> ::iterator itr = this->center_map.begin() ;
+      |                                ^~~
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:48:21 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:49:15 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
 Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
 Finished building: ../src/main.cpp
  
-Building target: demo class work 01
-Invoking: GCC C++ Linker
-g++  -o "demo class work 01"  ./src/main.o   
-Finished building target: demo class work 01
- 
-14:30:10 **** Build of configuration Debug for project demo class work 02 ****
-make all 
-make: Nothing to be done for 'all'.
-14:30:13 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-14:30:27 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
 Building target: as per lectures
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/student.o   
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
-14:37:47 **** Incremental Build of configuration Debug for project as per lectures ****
+22:49:50 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/preference.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preference.d" -MT"src/preference.o" -o "src/preference.o" "../src/preference.cpp"
-Finished building: ../src/preference.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-14:38:20 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-14:39:08 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-14:47:08 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/student.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/student.d" -MT"src/student.o" -o "src/student.o" "../src/student.cpp"
-Finished building: ../src/student.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-14:47:42 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-14:53:04 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:06:05 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:08:19 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-../src/as per lectures.cpp: In function ‘int main()’:
-../src/as per lectures.cpp:9:2: error: ‘load_students_csv’ was not declared in this scope
-    9 |  load_students_csv(students);
-      |  ^~~~~~~~~~~~~~~~~
-../src/as per lectures.cpp:18:2: error: ‘load_preference_csv’ was not declared in this scope
-   18 |  load_preference_csv(preferences) ;
-      |  ^~~~~~~~~~~~~~~~~~~
-../src/as per lectures.cpp:31:2: error: ‘link_stu_pref’ was not declared in this scope
-   31 |  link_stu_pref(students,preferences) ;
-      |  ^~~~~~~~~~~~~
-make: *** [src/as per lectures.o] Error 1
-src/subdir.mk:34: recipe for target 'src/as per lectures.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-17:09:11 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-../src/as per lectures.cpp: In function ‘int main()’:
-../src/as per lectures.cpp:9:2: error: ‘load_students_csv’ was not declared in this scope
-    9 |  load_students_csv(students);
-      |  ^~~~~~~~~~~~~~~~~
-../src/as per lectures.cpp:18:2: error: ‘load_preference_csv’ was not declared in this scope
-   18 |  load_preference_csv(preferences) ;
-      |  ^~~~~~~~~~~~~~~~~~~
-../src/as per lectures.cpp:31:2: error: ‘link_stu_pref’ was not declared in this scope
-   31 |  link_stu_pref(students,preferences) ;
-      |  ^~~~~~~~~~~~~
-make: *** [src/as per lectures.o] Error 1
-src/subdir.mk:34: recipe for target 'src/as per lectures.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-17:11:29 **** Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:11:46 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:12:44 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-../src/AdmissionSystem.cpp:111:2: error: ‘Add_Syst’ does not name a type
-  111 |  Add_Syst.load_students_csv(students);
-      |  ^~~~~~~~
-src/subdir.mk:27: recipe for target 'src/AdmissionSystem.o' failed
-make: *** [src/AdmissionSystem.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:13:06 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-In file included from ../src/AdmissionSystem.cpp:2:
-../src/AdmissionSystem.h:34:1: error: ‘Add_Syst’ does not name a type
-   34 | Add_Syst.load_students_csv(students);
-      | ^~~~~~~~
-src/subdir.mk:27: recipe for target 'src/AdmissionSystem.o' failed
-make: *** [src/AdmissionSystem.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:14:08 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:15:42 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/course.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
-In file included from ../src/course.cpp:8:
-../src/course.h:13:2: error: ‘string’ does not name a type
-   13 |  string coursr_id, course_name, fee, ccat_section ;
-      |  ^~~~~~
-src/subdir.mk:30: recipe for target 'src/course.o' failed
-make: *** [src/course.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:16:10 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/course.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
-Finished building: ../src/course.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:22:17 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/course.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
-Finished building: ../src/course.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:22:53 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-17:23:21 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-17:23:41 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:23:58 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:24:19 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:24:32 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:25:19 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/course.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
-Finished building: ../src/course.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:32:03 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-../src/AdmissionSystem.cpp: In member function ‘void Admission_System::load_eligibilities(std::vector<eligibility>&)’:
-../src/AdmissionSystem.cpp:147:8: warning: left operand of comma operator has no effect [-Wunused-value]
-  147 |  while(in,line){
-      |        ^~
-../src/AdmissionSystem.cpp:147:10: error: could not convert ‘((void)0, line)’ from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘bool’
-  147 |  while(in,line){
-      |        ~~^~~~~
-      |          |
-      |          std::string {aka std::__cxx11::basic_string<char>}
-src/subdir.mk:33: recipe for target 'src/AdmissionSystem.o' failed
-make: *** [src/AdmissionSystem.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:33:11 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/eligibility.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eligibility.d" -MT"src/eligibility.o" -o "src/eligibility.o" "../src/eligibility.cpp"
-Finished building: ../src/eligibility.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:40:02 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-../src/AdmissionSystem.cpp: In member function ‘void Admission_System::load_capacities(std::vector<capacity>&)’:
-../src/AdmissionSystem.cpp:172:8: warning: left operand of comma operator has no effect [-Wunused-value]
-  172 |  while(in,line) {
-      |        ^~
-../src/AdmissionSystem.cpp:172:10: error: could not convert ‘((void)0, line)’ from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘bool’
-  172 |  while(in,line) {
-      |        ~~^~~~~
-      |          |
-      |          std::string {aka std::__cxx11::basic_string<char>}
-src/subdir.mk:36: recipe for target 'src/AdmissionSystem.o' failed
-make: *** [src/AdmissionSystem.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:40:07 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-../src/AdmissionSystem.cpp: In member function ‘void Admission_System::load_capacities(std::vector<capacity>&)’:
-../src/AdmissionSystem.cpp:172:8: warning: left operand of comma operator has no effect [-Wunused-value]
-  172 |  while(in,line) {
-      |        ^~
-../src/AdmissionSystem.cpp:172:10: error: could not convert ‘((void)0, line)’ from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘bool’
-  172 |  while(in,line) {
-      |        ~~^~~~~
-      |          |
-      |          std::string {aka std::__cxx11::basic_string<char>}
-src/subdir.mk:36: recipe for target 'src/AdmissionSystem.o' failed
-make: *** [src/AdmissionSystem.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:40:31 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/capacity.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capacity.d" -MT"src/capacity.o" -o "src/capacity.o" "../src/capacity.cpp"
-Finished building: ../src/capacity.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:40:59 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:42:53 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:43:54 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building file: ../src/capacity.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capacity.d" -MT"src/capacity.o" -o "src/capacity.o" "../src/capacity.cpp"
-Finished building: ../src/capacity.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:44:05 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:44:22 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:45:29 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-../src/AdmissionSystem.cpp: In member function ‘void Admission_System::load_capacities(std::vector<capacity>&)’:
-../src/AdmissionSystem.cpp:189:24: error: ‘c’ was not declared in this scope
-  189 |   capacities.push_back(c) ;
-      |                        ^
-src/subdir.mk:36: recipe for target 'src/AdmissionSystem.o' failed
-make: *** [src/AdmissionSystem.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
-17:45:39 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:46:15 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:46:57 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-../src/AdmissionSystem.cpp:168:1: error: expected declaration before ‘}’ token
-  168 | }
-      | ^
-make: *** [src/AdmissionSystem.o] Error 1
-src/subdir.mk:36: recipe for target 'src/AdmissionSystem.o' failed
-"make all" terminated with exit code 2. Build might be incomplete.
-17:47:05 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:49:58 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:50:20 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-17:50:29 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-17:57:49 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
 Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
@@ -1041,45 +409,11 @@ Finished building: ../src/center.cpp
  
 Building target: as per lectures
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
-17:58:29 **** Incremental Build of configuration Debug for project as per lectures ****
+22:49:56 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-18:01:30 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-18:06:55 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
 Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
@@ -1087,21 +421,11 @@ Finished building: ../src/center.cpp
  
 Building target: as per lectures
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
-18:09:46 **** Incremental Build of configuration Debug for project as per lectures ****
+22:50:13 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
-Building file: ../src/AdmissionSystem.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
-Finished building: ../src/AdmissionSystem.cpp
- 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
 Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
@@ -1109,48 +433,243 @@ Finished building: ../src/center.cpp
  
 Building target: as per lectures
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
-18:10:30 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-Building file: ../src/as per lectures.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
- 
-Building target: as per lectures
-Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
-Finished building target: as per lectures
- 
-18:11:44 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-18:12:32 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-18:12:37 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-18:19:43 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-18:19:50 **** Incremental Build of configuration Debug for project as per lectures ****
-make all 
-make: Nothing to be done for 'all'.
-18:27:24 **** Incremental Build of configuration Debug for project as per lectures ****
+22:52:02 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
 Building file: ../src/AdmissionSystem.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
 Finished building: ../src/AdmissionSystem.cpp
  
-Building file: ../src/as per lectures.cpp
+Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
-Finished building: ../src/as per lectures.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+In file included from ../src/center.cpp:8:
+../src/center.h:22:15: error: ‘vector’ has not been declared
+   22 |  void display(vector<capacity>&capacities) ;
+      |               ^~~~~~
+../src/center.h:22:21: error: expected ‘,’ or ‘...’ before ‘<’ token
+   22 |  void display(vector<capacity>&capacities) ;
+      |                     ^
+../src/center.cpp:24:22: error: variable or field ‘display’ declared void
+   24 | void center::display(vector<capacity>&capacities) {
+      |                      ^~~~~~
+../src/center.cpp:24:22: error: ‘vector’ was not declared in this scope
+../src/center.cpp:10:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+    9 | #include <algorithm>
+  +++ |+#include <vector>
+   10 | 
+../src/center.cpp:24:29: error: ‘capacity’ was not declared in this scope
+   24 | void center::display(vector<capacity>&capacities) {
+      |                             ^~~~~~~~
+../src/center.cpp:24:39: error: ‘capacities’ was not declared in this scope
+   24 | void center::display(vector<capacity>&capacities) {
+      |                                       ^~~~~~~~~~
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+make: *** [src/center.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:52:13 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
  
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+In file included from ../src/center.cpp:8:
+../src/center.h:22:15: error: ‘vector’ has not been declared
+   22 |  void display(vector<capacity>&capacities) ;
+      |               ^~~~~~
+../src/center.h:22:21: error: expected ‘,’ or ‘...’ before ‘<’ token
+   22 |  void display(vector<capacity>&capacities) ;
+      |                     ^
+../src/center.cpp:24:22: error: variable or field ‘display’ declared void
+   24 | void center::display(vector<capacity>&capacities) {
+      |                      ^~~~~~
+../src/center.cpp:24:22: error: ‘vector’ was not declared in this scope
+../src/center.cpp:10:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+    9 | #include <algorithm>
+  +++ |+#include <vector>
+   10 | 
+../src/center.cpp:24:37: error: expected primary-expression before ‘>’ token
+   24 | void center::display(vector<capacity>&capacities) {
+      |                                     ^
+../src/center.cpp:24:39: error: ‘capacities’ was not declared in this scope; did you mean ‘capacity’?
+   24 | void center::display(vector<capacity>&capacities) {
+      |                                       ^~~~~~~~~~
+      |                                       capacity
+make: *** [src/center.o] Error 1
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:52:33 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+In file included from ../src/center.cpp:8:
+../src/center.h:11:8: error: ‘vector’ does not name a type
+   11 | extern vector<capacity> capacities ;
+      |        ^~~~~~
+../src/center.h:23:15: error: ‘vector’ has not been declared
+   23 |  void display(vector<capacity>&capacities) ;
+      |               ^~~~~~
+../src/center.h:23:21: error: expected ‘,’ or ‘...’ before ‘<’ token
+   23 |  void display(vector<capacity>&capacities) ;
+      |                     ^
+../src/center.cpp:24:22: error: variable or field ‘display’ declared void
+   24 | void center::display(vector<capacity>&capacities) {
+      |                      ^~~~~~
+../src/center.cpp:24:22: error: ‘vector’ was not declared in this scope
+../src/center.cpp:10:1: note: ‘std::vector’ is defined in header ‘<vector>’; did you forget to ‘#include <vector>’?
+    9 | #include <algorithm>
+  +++ |+#include <vector>
+   10 | 
+../src/center.cpp:24:37: error: expected primary-expression before ‘>’ token
+   24 | void center::display(vector<capacity>&capacities) {
+      |                                     ^
+../src/center.cpp:24:39: error: ‘capacities’ was not declared in this scope; did you mean ‘capacity’?
+   24 | void center::display(vector<capacity>&capacities) {
+      |                                       ^~~~~~~~~~
+      |                                       capacity
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+make: *** [src/center.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:52:48 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display(std::vector<capacity>&)’:
+../src/center.cpp:31:13: error: no match for ‘operator[]’ (operand types are ‘std::vector<capacity>’ and ‘std::__cxx11::basic_string<char>’)
+   31 |   capacities[itr->second ].display() ;
+      |             ^
+In file included from /usr/include/c++/9/vector:67,
+                 from ../src/center.h:9,
+                 from ../src/center.cpp:8:
+/usr/include/c++/9/bits/stl_vector.h:1040:7: note: candidate: ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = capacity; _Alloc = std::allocator<capacity>; std::vector<_Tp, _Alloc>::reference = capacity&; std::vector<_Tp, _Alloc>::size_type = long unsigned int]’
+ 1040 |       operator[](size_type __n) _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_vector.h:1040:28: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::vector<capacity>::size_type’ {aka ‘long unsigned int’}
+ 1040 |       operator[](size_type __n) _GLIBCXX_NOEXCEPT
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_vector.h:1058:7: note: candidate: ‘std::vector<_Tp, _Alloc>::const_reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) const [with _Tp = capacity; _Alloc = std::allocator<capacity>; std::vector<_Tp, _Alloc>::const_reference = const capacity&; std::vector<_Tp, _Alloc>::size_type = long unsigned int]’
+ 1058 |       operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_vector.h:1058:28: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::vector<capacity>::size_type’ {aka ‘long unsigned int’}
+ 1058 |       operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+      |                  ~~~~~~~~~~^~~
+make: *** [src/center.o] Error 1
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:53:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:53:22: error: no matching function for call to ‘center::display()’
+   53 |   centers[i].display() ;
+      |                      ^
+In file included from ../src/AdmissionSystem.h:23,
+                 from ../src/main.cpp:2:
+../src/center.h:24:7: note: candidate: ‘void center::display(std::vector<capacity>&)’
+   24 |  void display(vector<capacity>&capacities) ;
+      |       ^~~~~~~
+../src/center.h:24:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:39: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:17 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:53:22: error: no matching function for call to ‘center::display()’
+   53 |   centers[i].display() ;
+      |                      ^
+In file included from ../src/AdmissionSystem.h:23,
+                 from ../src/main.cpp:2:
+../src/center.h:24:7: note: candidate: ‘void center::display(std::vector<capacity>&)’
+   24 |  void display(vector<capacity>&capacities) ;
+      |       ^~~~~~~
+../src/center.h:24:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:39: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+../src/center.cpp: In member function ‘void center::display(std::vector<capacity>&)’:
+../src/center.cpp:31:14: error: ‘soit’ was not declared in this scope
+   31 |   capacities[soit(itr->second) ].display() ;
+      |              ^~~~
+make: *** [src/center.o] Error 1
+src/subdir.mk:39: recipe for target 'src/center.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:43 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:53:22: error: no matching function for call to ‘center::display()’
+   53 |   centers[i].display() ;
+      |                      ^
+In file included from ../src/AdmissionSystem.h:23,
+                 from ../src/main.cpp:2:
+../src/center.h:24:7: note: candidate: ‘void center::display(std::vector<capacity>&)’
+   24 |  void display(vector<capacity>&capacities) ;
+      |       ^~~~~~~
+../src/center.h:24:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:39: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:55:08 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:55:24 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
 Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
@@ -1158,6 +677,30 @@ Finished building: ../src/center.cpp
  
 Building target: as per lectures
 Invoking: GCC C++ Linker
-g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/as\ per\ lectures.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preference.o ./src/student.o   
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:55:34 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:55:48 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  

@@ -37,6 +37,14 @@ public:
 	void load_capacities_csv(vector<capacity> &capacities) ;
 	void load_centers_csv(vector <center> &centers) ;
 
+
+	/* linking of center and capacity
+	 * map <string,string> center_map ;
+			// key : course no
+			// value : index of capacity    */
+	void link_course_capacity_center(vector<center>&centers,vector<capacity>&capacities,
+			 vector<course>&courses) ;
+
 };
 
 extern Admission_System Add_Syst ;

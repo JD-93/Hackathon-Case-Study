@@ -47,9 +47,10 @@ int main() {
 
 	vector <center> centers ;
 	Add_Syst.load_centers_csv(centers) ;
+	Add_Syst.link_course_capacity_center(centers,capacities,courses) ;
 	cout<<"size of centers "<<centers.size() <<endl ;
 	for (size_t i=0 ; i<centers.size() ; i++ ){
-		centers[i].display() ;
+		centers[i].display(capacities) ;
 	}
 
 
