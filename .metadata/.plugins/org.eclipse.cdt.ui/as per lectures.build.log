@@ -1,6 +1,15 @@
-14:45:46 **** Incremental Build of configuration Debug for project as per lectures ****
+14:53:04 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/as per lectures.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as per lectures.d" -MT"src/as\ per\ lectures.d" -o "src/as per lectures.o" "../src/as per lectures.cpp"
+Finished building: ../src/as per lectures.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/as\ per\ lectures.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
 
-14:45:46 Build Finished. 0 errors, 0 warnings. (took 81ms)
+14:53:05 Build Finished. 0 errors, 0 warnings. (took 1s.94ms)
 

@@ -1,4 +1,4 @@
-14:41:06 **** Incremental Build of configuration Debug for project demo class work 01 ****
+14:30:08 **** Incremental Build of configuration Debug for project demo class work 01 ****
 make all 
 Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "demo class work 01"  ./src/main.o
 Finished building target: demo class work 01
  
 
-14:41:07 Build Finished. 0 errors, 0 warnings. (took 1s.139ms)
+14:30:10 Build Finished. 0 errors, 0 warnings. (took 1s.144ms)
 
