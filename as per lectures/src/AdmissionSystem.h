@@ -38,12 +38,27 @@ public:
 	void load_centers_csv(vector <center> &centers) ;
 
 
-	/* linking of center and capacity
-	 * map <string,string> center_map ;
-			// key : course no
-			// value : index of capacity    */
-	void link_course_capacity_center(vector<center>&centers,vector<capacity>&capacities,
-			 vector<course>&courses) ;
+	/*
+	 *  map<capacity,course> center_map ;
+	 *  map<int,string> center_map ;
+	 *  key : capacity index
+	 *  value : course_id
+	 */
+	//    center -- capacity -- center
+	// link center and capacity
+	void link_capacity_center(vector<course>&courses,vector<capacity>&capaciies,
+									 vector<center>&centers) ;
+
+	/*
+	 *  map<capacity,center> course_map ;
+	 *  map<int,string> course_map ;
+	 *  key : capacity index
+	 *  value : center_id
+	 */
+	//    center -- capacity -- center
+	// link course and capacity
+	void link_course_capacity(vector<course>&courses,vector<capacity>&capaciies,
+										 vector<center>&centers) ;
 
 };
 

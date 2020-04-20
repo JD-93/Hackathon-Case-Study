@@ -1,9 +1,24 @@
-22:55:48 **** Incremental Build of configuration Debug for project as per lectures ****
+22:05:36 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
 Building file: ../src/center.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
 Finished building: ../src/center.cpp
+ 
+Building file: ../src/course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/course.d" -MT"src/course.o" -o "src/course.o" "../src/course.cpp"
+Finished building: ../src/course.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
  
 Building target: as per lectures
 Invoking: GCC C++ Linker
@@ -11,5 +26,5 @@ g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center
 Finished building target: as per lectures
  
 
-22:55:49 Build Finished. 0 errors, 0 warnings. (took 891ms)
+22:05:39 Build Finished. 0 errors, 0 warnings. (took 3s.286ms)
 

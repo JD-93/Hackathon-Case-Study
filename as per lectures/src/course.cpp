@@ -19,3 +19,24 @@ course::~course() {
 void course::display() {
 	cout<<course_id<<","<<course_name<<","<< fee<<"," <<ccat_section<<endl;
 }
+
+
+
+/*
+ *  map<capacity,center> course_map ;
+ *  map<int,string> course_map ;
+ *  key : capacity index
+ *  value : center_id
+ */
+//    center -- capacity -- center
+// link course and capacity
+void course::display_with_capacity_course() {
+	map<int,string> :: iterator itr =  course_map.begin() ;
+	while(itr != course_map.end()){
+		cout<<"\t" ;
+		cout<<itr->first<<"\t" ;
+		cout<<itr->second ;
+		cout<<endl ;
+		itr++ ;
+	}
+}

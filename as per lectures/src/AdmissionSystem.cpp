@@ -219,25 +219,74 @@ void Admission_System::load_centers_csv(vector<center> &centers) {
 	}
 }
 
-/* linking of center and capacity
-	 * map <string,string> center_map ;
-			// key : course no
-			// value : index of capacity    */
-void Admission_System::link_course_capacity_center(vector<center> &centers,
-		vector<capacity> &capacities, vector<course>&courses) {
 
-	for (size_t i=0 ; i<centers.size() ; i++ ){
-		for (size_t k=0 ; k<courses.size() ; k++ ){
-			for (size_t j=0 ; j<capacities.size() ; j++ ){
+/*
+	 *  map<capacity,course> center_map ;
+	 *  map<int,string> center_map ;
+	 *  key : capacity index
+	 *  value : course_id
+	 */
+//    center -- capacity -- center
+// link capacity and center
+void Admission_System::link_capacity_center(vector<course> &courses,
+		vector<capacity> &capaciies, vector<center> &centers) {
 
-				if (centers[i].ceter_id == capacities[j].cent_id){
-					if (capacities[j].course_name == courses[k].course_name){
-						centers[i].center_map[courses[k].course_id] = to_string(j) ;
+		for (size_t i=0 ; i<centers.size() ; i++ ){
+			for (size_t j=0 ; j<capaciies.size() ; j++ ){
+				if (capaciies[j].cent_id == centers[i].ceter_id){
+					for (size_t k=0 ; k<courses.size() ; k++ ){
+						if (courses[k].course_name == capaciies[j].course_name) {
+							centers[i].center_map[j] = capaciies[j].course_name ;
+						}
 					}
 				}
+			}
+		}
+}
 
+
+
+
+/*
+ *  map<capacity,center> course_map ;
+ *  map<int,string> course_map ;
+ *  key : capacity index
+ *  value : center_id
+ */
+//    center -- capacity -- center
+// link course and capacity
+void Admission_System::link_course_capacity(vector<course> &courses,
+		vector<capacity> &capaciies, vector<center> &centers) {
+
+	for (size_t i=0 ; i<courses.size() ; i++ ){
+		for (size_t j=0 ; j<capaciies.size() ; j++ ){
+			if (courses[i].course_name == capaciies[j].course_name ){
+				for (size_t k=0 ; k<courses.size() ; k++ ){
+					if (centers[k].ceter_id == capaciies[j].cent_id) {
+						courses[i].course_map[j] = capaciies[j].cent_id   ;
+					}
+				}
 			}
 		}
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

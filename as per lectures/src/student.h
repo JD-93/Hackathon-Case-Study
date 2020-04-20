@@ -28,6 +28,7 @@ public:
 	student();
 	~student();
 	void display() ;
+	void display_with_preferences() ;
 };
 
 #endif /* STUDENT_H_ */
