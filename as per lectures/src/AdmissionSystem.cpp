@@ -271,22 +271,22 @@ void Admission_System::link_course_capacity(vector<course> &courses,
 	}
 }
 
+void Admission_System::load_degree_csv(vector<degree> &degrees) {
+	ifstream in ;
+	in.open("degrees.txt") ;
+
+	degree d ;
+	string line ;
+	while(getline(in,line)){
+		stringstream ss(line) ;
+
+		string temp ;
+
+		getline(ss,temp,',') ;
+		d.degree_name = temp ;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		degrees.push_back(d) ;
+	}
+}
 

@@ -22,6 +22,7 @@ void center::display() {
 }
 
 void center::display_with_capacity_course() {
+	this->display() ;
 	map<int,string> :: iterator itr = center_map.begin() ;
 
 	while(itr != center_map.end()){

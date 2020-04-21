@@ -2465,3 +2465,1533 @@ Invoking: GCC C++ Linker
 g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
+23:17:16 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+./src/main.o: In function `main':
+/home/sunbeam/Desktop/Hackathon Case Study/Hackathon-Case-Study/as per lectures/Debug/../src/main.cpp:19: undefined reference to `capacities'
+makefile:45: recipe for target 'as per lectures' failed
+collect2: error: ld returned 1 exit status
+make: *** [as per lectures] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:17:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:17:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:05:52 **** Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.h:24,
+                 from ../src/AdmissionSystem.cpp:2:
+../src/degree.h:17:9: error: field ‘std::string degree::degree’ with same name as class [-fpermissive]
+   17 |  string degree ;
+      |         ^~~~~~
+../src/AdmissionSystem.cpp: In member function ‘void Admission_System::load_degree_csv(std::vector<degree>&)’:
+../src/AdmissionSystem.cpp:289:3: error: ‘centers’ was not declared in this scope; did you mean ‘center’?
+  289 |   centers.push_back(d) ;
+      |   ^~~~~~~
+      |   center
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:06:08 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.h:24,
+                 from ../src/AdmissionSystem.cpp:2:
+../src/degree.h:17:9: error: field ‘std::string degree::degree’ with same name as class [-fpermissive]
+   17 |  string degree ;
+      |         ^~~~~~
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:06:35 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.h:24,
+                 from ../src/AdmissionSystem.cpp:2:
+../src/degree.h:17:9: error: expected ‘;’ at end of member declaration
+   17 |  string degree _name;
+      |         ^~~~~~
+      |               ;
+../src/degree.h:17:16: error: ‘_name’ does not name a type; did you mean ‘rename’?
+   17 |  string degree _name;
+      |                ^~~~~
+      |                rename
+../src/degree.h:17:9: error: field ‘std::string degree::degree’ with same name as class [-fpermissive]
+   17 |  string degree _name;
+      |         ^~~~~~
+../src/AdmissionSystem.cpp: In member function ‘void Admission_System::load_degree_csv(std::vector<degree>&)’:
+../src/AdmissionSystem.cpp:286:5: error: ‘class degree’ has no member named ‘degree_name’
+  286 |   d.degree_name = temp ;
+      |     ^~~~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:06:55 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/degree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/degree.d" -MT"src/degree.o" -o "src/degree.o" "../src/degree.cpp"
+../src/degree.cpp: In member function ‘void degree::display()’:
+../src/degree.cpp:20:14: error: expected primary-expression before ‘<<’ token
+   20 |  cout<<degree<<endl ;
+      |              ^~
+src/subdir.mk:42: recipe for target 'src/degree.o' failed
+make: *** [src/degree.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:07:11 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/degree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/degree.d" -MT"src/degree.o" -o "src/degree.o" "../src/degree.cpp"
+Finished building: ../src/degree.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:09:16 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:09:32 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:15:21 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:7:29: error: ‘students’ was not declared in this scope; did you mean ‘student’?
+    7 |  Add_Syst.load_students_csv(students);
+      |                             ^~~~~~~~
+      |                             student
+../src/main.cpp:9:31: error: ‘preferences’ was not declared in this scope; did you mean ‘preference’?
+    9 |  Add_Syst.load_preference_csv(preferences) ;
+      |                               ^~~~~~~~~~~
+      |                               preference
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:56 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:7:29: error: ‘students’ was not declared in this scope; did you mean ‘student’?
+    7 |  Add_Syst.load_students_csv(students);
+      |                             ^~~~~~~~
+      |                             student
+../src/main.cpp:10:31: error: ‘preferences’ was not declared in this scope; did you mean ‘preference’?
+   10 |  Add_Syst.load_preference_csv(preferences) ;
+      |                               ^~~~~~~~~~~
+      |                               preference
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+09:17:20 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:20:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:21:06 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/center.d" -MT"src/center.o" -o "src/center.o" "../src/center.cpp"
+Finished building: ../src/center.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:21:13 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+09:57:54 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+11:08:31 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.cpp:2:
+../src/AdmissionSystem.h: In member function ‘bool Admission_System::sort_by_A(student, student)’:
+../src/AdmissionSystem.h:85:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   85 |   int rank_a = a.rank_A ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h:86:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   86 |   int rank_b = b.rank_B ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h: In member function ‘bool Admission_System::sort_by_B(student, student)’:
+../src/AdmissionSystem.h:94:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   94 |   int rank_a = a.rank_A ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h:95:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   95 |   int rank_b = b.rank_B ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h: In member function ‘bool Admission_System::sort_by_C(student, student)’:
+../src/AdmissionSystem.h:102:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+  102 |   int rank_a = a.rank_A ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h:103:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+  103 |   int rank_b = b.rank_B ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:09:06 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.cpp:2:
+../src/AdmissionSystem.h: In member function ‘bool Admission_System::sort_by_B(student, student)’:
+../src/AdmissionSystem.h:94:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   94 |   int rank_a = a.rank_A ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h:95:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+   95 |   int rank_b = b.rank_B ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h: In member function ‘bool Admission_System::sort_by_C(student, student)’:
+../src/AdmissionSystem.h:102:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+  102 |   int rank_a = a.rank_A ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+../src/AdmissionSystem.h:103:18: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘int’ in initialization
+  103 |   int rank_b = b.rank_B ;
+      |                ~~^~~~~~
+      |                  |
+      |                  std::string {aka std::__cxx11::basic_string<char>}
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+11:09:22 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:35:76: error: no matching function for call to ‘Admission_System::sort_by_A()’
+   35 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A()) ;
+      |                                                                            ^
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: candidate: ‘bool Admission_System::sort_by_A(student, student)’
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+../src/AdmissionSystem.h:83:7: note:   candidate expects 2 arguments, 0 provided
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:10:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:35:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   35 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+12:59:26 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:35:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   35 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a , student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:00:00 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.cpp:2:
+../src/AdmissionSystem.h:107:7: error: ‘Add_Syst’ has not been declared
+  107 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |       ^~~~~~~~
+../src/AdmissionSystem.h:107:15: error: expected ‘,’ or ‘...’ before ‘.’ token
+  107 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |               ^
+../src/AdmissionSystem.h:107:75: error: ISO C++ forbids declaration of ‘sort’ with no type [-fpermissive]
+  107 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                                           ^
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:00:33 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+13:00:51 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+13:00:51 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.cpp:2:
+../src/AdmissionSystem.h:107:7: error: ‘Add_Syst’ has not been declared
+  107 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |       ^~~~~~~~
+../src/AdmissionSystem.h:107:15: error: expected ‘,’ or ‘...’ before ‘.’ token
+  107 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |               ^
+../src/AdmissionSystem.h:107:75: error: ISO C++ forbids declaration of ‘sort’ with no type [-fpermissive]
+  107 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                                           ^
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:01:29 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+13:01:29 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+In file included from ../src/AdmissionSystem.cpp:2:
+../src/AdmissionSystem.h:111:25: error: expected initializer before ‘Add_Syst’
+  111 | extern Admission_System Add_Syst ;
+      |                         ^~~~~~~~
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:42: recipe for target 'src/AdmissionSystem.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:01:39 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:39:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   39 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:02:14 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:03:16 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:04:31 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:57: error: ‘sort_by_A’ was not declared in this scope
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),sort_by_A) ;
+      |                                                         ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:04:49 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b) ;
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:05:07 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:83: error: expected primary-expression before ‘,’ token
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A(student,student)) ;
+      |                                                                                   ^
+../src/main.cpp:40:91: error: expected primary-expression before ‘)’ token
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A(student,student)) ;
+      |                                                                                           ^
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:05:29 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b) ;
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:07:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Iterator2 = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’:
+/usr/include/c++/9/bits/stl_algo.h:81:17:   required from ‘void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1920:34:   required from ‘_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1952:38:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1967:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:4897:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’
+../src/main.cpp:40:65:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:143:18: error: no match for call to ‘(Admission_System) (student&, student&)’
+  143 |         { return bool(_M_comp(*__it1, *__it2)); }
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_comp_iter<_Compare>::operator()(_Value&, _Iterator) [with _Value = student; _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’:
+/usr/include/c++/9/bits/stl_algo.h:1827:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Val_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1854:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1884:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1970:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:4897:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’
+../src/main.cpp:40:65:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:215:11: error: no match for call to ‘(Admission_System) (student&, student&)’
+  215 |  { return bool(_M_comp(__val, *__it)); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Value = student; _Compare = Admission_System]’:
+/usr/include/c++/9/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Distance = long int; _Tp = student; _Compare = __gnu_cxx::__ops::_Iter_comp_val<Admission_System>]’
+/usr/include/c++/9/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Distance = long int; _Tp = student; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1671:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1932:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1947:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1967:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:4897:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’
+../src/main.cpp:40:65:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:177:11: error: no match for call to ‘(Admission_System) (student&, student&)’
+  177 |  { return bool(_M_comp(*__it, __val)); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:03 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:04 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Iterator2 = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’:
+/usr/include/c++/9/bits/stl_algo.h:81:17:   required from ‘void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1920:34:   required from ‘_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1952:38:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1967:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:4897:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’
+../src/main.cpp:40:65:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:143:18: error: no match for call to ‘(Admission_System) (student&, student&)’
+  143 |         { return bool(_M_comp(*__it1, *__it2)); }
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_comp_iter<_Compare>::operator()(_Value&, _Iterator) [with _Value = student; _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’:
+/usr/include/c++/9/bits/stl_algo.h:1827:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Val_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1854:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1884:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1970:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:4897:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’
+../src/main.cpp:40:65:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:215:11: error: no match for call to ‘(Admission_System) (student&, student&)’
+  215 |  { return bool(_M_comp(__val, *__it)); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Value = student; _Compare = Admission_System]’:
+/usr/include/c++/9/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Distance = long int; _Tp = student; _Compare = __gnu_cxx::__ops::_Iter_comp_val<Admission_System>]’
+/usr/include/c++/9/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Distance = long int; _Tp = student; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1671:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1932:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1947:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:1967:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<Admission_System>]’
+/usr/include/c++/9/bits/stl_algo.h:4897:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = Admission_System]’
+../src/main.cpp:40:65:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:177:11: error: no match for call to ‘(Admission_System) (student&, student&)’
+  177 |  { return bool(_M_comp(*__it, __val)); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:34 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:37 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:38 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:39 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:40 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:41 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:42 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:43 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:44 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:45 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:46 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:47 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:48 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:49 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:50 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:51 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:52 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:08:54 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:66: error: invalid use of non-static member function ‘bool Admission_System::sort_by_A(student, student)’
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+      |                                                         ~~~~~~~~~^~~~~~~~~
+In file included from ../src/main.cpp:2:
+../src/AdmissionSystem.h:83:7: note: declared here
+   83 |  bool sort_by_A (student a,student b)
+      |       ^~~~~~~~~
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:10:07 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+13:10:07 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:10:17 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+13:10:18 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+13:10:20 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+13:10:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:11:04 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:11:33 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:12:04 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+13:13:10 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:40:57: error: expected primary-expression before ‘)’ token
+   40 |  sort(Add_Syst.students.begin(),Add_Syst.students.end(),) ;
+      |                                                         ^
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:13:21 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘constexpr bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Iterator2 = __gnu_cxx::__normal_iterator<student*, std::vector<student> >]’:
+/usr/include/c++/9/bits/stl_algo.h:81:17:   required from ‘void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator, _Compare) [with _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1920:34:   required from ‘_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1952:38:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1967:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:4865:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >]’
+../src/main.cpp:40:56:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:43:23: error: no match for ‘operator<’ (operand types are ‘student’ and ‘student’)
+   43 |       { return *__it1 < *__it2; }
+      |                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:915:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’
+  915 |     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:915:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h:43:23: note:   ‘student’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+   43 |       { return *__it1 < *__it2; }
+      |                ~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:922:5: note: candidate: ‘template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+  922 |     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:922:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h:43:23: note:   ‘student’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+   43 |       { return *__it1 < *__it2; }
+      |                ~~~~~~~^~~~~~~~
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_less_iter::operator()(_Value&, _Iterator) const [with _Value = student; _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >]’:
+/usr/include/c++/9/bits/stl_algo.h:1827:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1854:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1884:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1970:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:4865:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >]’
+../src/main.cpp:40:56:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:90:22: error: no match for ‘operator<’ (operand types are ‘student’ and ‘student’)
+   90 |       { return __val < *__it; }
+      |                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:915:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’
+  915 |     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:915:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h:90:22: note:   ‘student’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+   90 |       { return __val < *__it; }
+      |                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:922:5: note: candidate: ‘template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+  922 |     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:922:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h:90:22: note:   ‘student’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+   90 |       { return __val < *__it; }
+      |                ~~~~~~^~~~~~~
+/usr/include/c++/9/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_val::operator()(_Iterator, _Value&) const [with _Iterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Value = student]’:
+/usr/include/c++/9/bits/stl_heap.h:133:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Distance = long int; _Tp = student; _Compare = __gnu_cxx::__ops::_Iter_less_val]’
+/usr/include/c++/9/bits/stl_heap.h:237:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Distance = long int; _Tp = student; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_heap.h:342:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1671:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1932:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1947:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:1967:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<student*, std::vector<student> >; _Compare = __gnu_cxx::__ops::_Iter_less_iter]’
+/usr/include/c++/9/bits/stl_algo.h:4865:18:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<student*, std::vector<student> >]’
+../src/main.cpp:40:56:   required from here
+/usr/include/c++/9/bits/predefined_ops.h:65:22: error: no match for ‘operator<’ (operand types are ‘student’ and ‘student’)
+   65 |       { return *__it < __val; }
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+      |                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:915:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’
+  915 |     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:915:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h:65:22: note:   ‘student’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+   65 |       { return *__it < __val; }
+      |                ~~~~~~^~~~~~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_iterator.h:922:5: note: candidate: ‘template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+  922 |     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:922:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/9/bits/stl_algobase.h:71,
+                 from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/ios:40,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/AdmissionSystem.h:11,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/predefined_ops.h:65:22: note:   ‘student’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+   65 |       { return *__it < __val; }
+      |                ~~~~~~^~~~~~~
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:13:58 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:14:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:15:42 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:16:20 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:16:39 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:17:46 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:18:25 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:31:56 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:33:47 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:36:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:39:07 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:44:24 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:48:44: error: no match for ‘operator[]’ (operand types are ‘std::map<int, std::__cxx11::basic_string<char> >’ and ‘std::__cxx11::basic_string<char>’)
+   48 |          if (Add_Syst.courses[k].course_map[itr->second] == Add_Syst.students[i].stu_pref[j].center_id){
+      |                                            ^
+In file included from /usr/include/c++/9/map:61,
+                 from ../src/course.h:8,
+                 from ../src/AdmissionSystem.h:21,
+                 from ../src/main.cpp:2:
+/usr/include/c++/9/bits/stl_map.h:490:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = std::__cxx11::basic_string<char>; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, std::__cxx11::basic_string<char> > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::__cxx11::basic_string<char>; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  490 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:490:34: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const key_type&’ {aka ‘const int&’}
+  490 |       operator[](const key_type& __k)
+      |                  ~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/9/bits/stl_map.h:510:7: note: candidate: ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](std::map<_Key, _Tp, _Compare, _Alloc>::key_type&&) [with _Key = int; _Tp = std::__cxx11::basic_string<char>; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, std::__cxx11::basic_string<char> > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::__cxx11::basic_string<char>; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]’
+  510 |       operator[](key_type&& __k)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_map.h:510:29: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::map<int, std::__cxx11::basic_string<char> >::key_type&&’ {aka ‘int&&’}
+  510 |       operator[](key_type&& __k)
+      |                  ~~~~~~~~~~~^~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:44:38 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:46:05 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:46:39 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:46:46 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:48:18 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:48:31 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+13:48:43 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:54:11: error: ‘cou’ was not declared in this scope
+   54 |           cou<<"filled capacity"<<Add_Syst.capacities[itr->first].filled_cap <<endl ;
+      |           ^~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+13:48:48 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
