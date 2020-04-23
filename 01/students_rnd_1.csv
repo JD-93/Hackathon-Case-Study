@@ -38,7 +38,7 @@
 100,avi,139,168,-1,B.E. Electrical,66.41,NA,NA,NA,NA,NA,NA
 145,aditya,175,164,-1,M.Sc. Computer,57.48,NA,NA,NA,NA,NA,NA
 5,aishwarya,165,159,-1,M.Sc. Statistics,84.19,NA,NA,NA,NA,NA,NA
-166,aaditya,138,-1,-1,M.Sc. Computer,52.96,NA,NA,NA,NA,NA,NA
+133,ram,82,-1,-1,B.Sc.,59.19,NA,NA,NA,NA,NA,NA
 22,suhani,156,153,-1,B.Sc.,81.18,NA,NA,NA,NA,NA,NA
 175,aditi,127,147,-1,B.E. Electronics,50.24,NA,NA,NA,NA,NA,NA
 59,abhi,113,146,-1,M.Sc. Computer,73.78,NA,NA,NA,NA,NA,NA
@@ -51,33 +51,32 @@
 142,sanchit,145,129,-1,M.Sc. Statistics,57.82,1,PG-DAC,ACN,NA,NA,NA
 62,kamalika,192,128,-1,B.Sc.,73.23,NA,NA,NA,NA,NA,NA
 42,amit,194,126,-1,B.E. Civil,76.43,NA,NA,NA,NA,NA,NA
-106,juvina,28,-1,-1,B.E. Computer,65.16,1,PG-DGI,ACN,NA,NA,NA
+65,kunal,124,-1,-1,M.Sc. Computer,73.09,NA,NA,NA,NA,NA,NA
+97,ankur,93,33,-1,B.E. Computer,66.84,1,PG-DBDA,ACN,NA,NA,NA
+74,nikita,14,31,-1,B.E. Civil,71.69,NA,NA,NA,NA,NA,NA
 199,nitin,41,27,-1,B.Sc.,45.05,NA,NA,NA,NA,NA,NA
 162,ajay,46,21,-1,B.E. Computer,54.34,1,PG-DAC,ACN,NA,NA,NA
-93,natasha,33,20,-1,M.Sc. Computer,67.59,1,PG-DMC,SIP,NA,NA,NA
 75,atul,62,17,-1,M.Sc. Statistics,71.2,1,PG-DBDA,ACP,NA,NA,NA
 125,rajeev,70,14,-1,B.E. Mechanical,61.32,NA,NA,NA,NA,NA,NA
-74,nikita,14,31,-1,B.E. Civil,71.69,NA,NA,NA,NA,NA,NA
 4,manish,21,13,-1,B.E. Electrical,84.55,1,PG-DAC,ACP,NA,NA,NA
 67,archita,1,10,-1,B.E. Civil,72.92,NA,NA,NA,NA,NA,NA
-97,ankur,93,33,-1,B.E. Computer,66.84,1,PG-DBDA,ACN,NA,NA,NA
-54,nishant,5,35,-1,B.E. Computer,74.63,1,PG-DGI,ACN,NA,NA,NA
-168,shaan,43,36,-1,B.E. Electronics,52.76,1,PG-DAC,ACP,NA,NA,NA
-65,kunal,124,-1,-1,M.Sc. Computer,73.09,NA,NA,NA,NA,NA,NA
+166,aaditya,138,-1,-1,M.Sc. Computer,52.96,NA,NA,NA,NA,NA,NA
+93,natasha,33,20,-1,M.Sc. Computer,67.59,1,PG-DMC,SIP,NA,NA,NA
+106,juvina,28,-1,-1,B.E. Computer,65.16,1,PG-DGI,ACN,NA,NA,NA
+29,deepak,87,-1,-1,B.E. Civil,80,NA,NA,NA,NA,NA,NA
+34,manisha,182,-1,-1,B.E. Electrical,78.82,NA,NA,NA,NA,NA,NA
+128,krishna,170,-1,-1,B.E. Electrical,60.55,NA,NA,NA,NA,NA,NA
+35,sam,103,-1,-1,B.E. Mechanical,78.73,NA,NA,NA,NA,NA,NA
+27,manu,110,-1,-1,M.Sc. Computer,80.72,NA,NA,NA,NA,NA,NA
 190,mayur,4,-1,-1,M.Sc. Computer,47.43,NA,NA,NA,NA,NA,NA
 131,raghav,112,-1,-1,B.E. Civil,59.54,NA,NA,NA,NA,NA,NA
-35,sam,103,-1,-1,B.E. Mechanical,78.73,NA,NA,NA,NA,NA,NA
-133,ram,82,-1,-1,B.Sc.,59.19,NA,NA,NA,NA,NA,NA
+168,shaan,43,36,-1,B.E. Electronics,52.76,1,PG-DAC,ACP,NA,NA,NA
 172,lavanya,88,39,-1,B.E. Computer,51.92,NA,NA,NA,NA,NA,NA
-27,manu,110,-1,-1,M.Sc. Computer,80.72,NA,NA,NA,NA,NA,NA
-128,krishna,170,-1,-1,B.E. Electrical,60.55,NA,NA,NA,NA,NA,NA
-29,deepak,87,-1,-1,B.E. Civil,80,NA,NA,NA,NA,NA,NA
 102,prachi,95,40,-1,B.E. Computer,66.26,1,PG-DAC,ACP,NA,NA,NA
-34,manisha,182,-1,-1,B.E. Electrical,78.82,NA,NA,NA,NA,NA,NA
+54,nishant,5,35,-1,B.E. Computer,74.63,1,PG-DGI,ACN,NA,NA,NA
 91,aryan,2,1,1,B.E. Mechanical,67.77,NA,NA,NA,NA,NA,NA
 178,anusha,10,3,2,B.E. Electrical,49.59,NA,NA,NA,NA,NA,NA
 114,deepro,31,12,3,M.Sc. Statistics,63.77,NA,NA,NA,NA,NA,NA
-58,HGH,4,5,3,JHJ,45,NA,NA,NA,NA,NA,NA
 11,soham,45,11,4,B.E. Computer,83.5,1,PG-DESD,ACN,NA,NA,NA
 108,vaibhav,65,15,5,B.E. Computer,65.02,1,PG-DESD,SIP,NA,NA,NA
 140,shekhar,58,9,6,B.E. Mechanical,58.06,NA,NA,NA,NA,NA,NA

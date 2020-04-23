@@ -32,49 +32,39 @@ int main() {
 
 
 	int cycle = 1 ;
-	while (cycle<6){
 
-		sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
-		for (size_t i=0 ; i<Add_Syst.students.size() ; i++){
-			for (size_t j=0 ; j<Add_Syst.students[i].stu_pref.size() ; j++){
-				if (Add_Syst.students[i].stu_pref[j].pref_no ==  to_string(cycle) ){
+	sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
+	for (size_t i=0 ; i<Add_Syst.students.size() ; i++ ){
+		if (Add_Syst.students[i].rank_A != "-1" ){
+			for (size_t j=0 ; j<Add_Syst.students[i].stu_pref.size() ; j++ ){
+				if (Add_Syst.students[i].stu_pref[j].pref_no == to_string(cycle)){
 
-					for (size_t k=0 ; k<Add_Syst.courses.size(); k++ ){
-						if (Add_Syst.courses[k].course_name == Add_Syst.students[i].stu_pref[j].course_name){
-							if (Add_Syst.courses[k].ccat_section == "A"){
-
+					for (size_t k=0 ; k<Add_Syst.courses.size() ; k++ ){
+						if (Add_Syst.courses[k].ccat_section == "A"){
+							if (Add_Syst.courses[k].course_name == Add_Syst.students[i].stu_pref[j].course_name ){
 								map<int,string>::iterator itr = Add_Syst.courses[k].course_map.begin() ;
-								while(itr != Add_Syst.courses[k].course_map.end()){
-									if (Add_Syst.courses[k].course_map[itr->first] == Add_Syst.students[i].stu_pref[j].center_id){
+								while(itr != Add_Syst.courses[k].course_map.end()) {
+									if (itr->second == Add_Syst.students[i].stu_pref[j].center_id){
+										if (Add_Syst.capacities[itr->first].filled_cap !=
+												Add_Syst.capacities[itr->first].max_cap){
 
-										cout<<itr->first <<endl;
-										cout<<Add_Syst.courses[k].course_map[itr->first]<<endl;
-										Add_Syst.students[i].display_with_preferences() ;
 
-										cout<<"filled capacity"<<Add_Syst.capacities[itr->first].filled_cap <<endl ;
-										cout<<"filled capacity"<<Add_Syst.capacities[itr->first].max_cap <<endl ;
-
+											Add_Syst.students[i].display_with_preferences() ;
+										}
 									}
-
-
 									itr++ ;
+
 								}
-
-
 							}
 						}
 					}
 				}
 			}
 		}
-
-		cycle++ ;
 	}
 
 
-
-
-
+	sort(Add_Syst.students.begin(),Add_Syst.students.end(),Add_Syst.sort_by_A) ;
 
 
 

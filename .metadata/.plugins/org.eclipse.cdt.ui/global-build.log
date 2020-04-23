@@ -3995,3 +3995,645 @@ Invoking: GCC C++ Linker
 g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
+19:59:32 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:35 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+20:01:55 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+14:39:04 **** Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+14:42:01 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+14:51:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+14:57:47 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:46:10: error: expected identifier before ‘(’ token
+   46 |          (Add_Syst.students[i].stu_pref[j].course_name == Add_Syst.courses[k].course_name){
+      |          ^
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:57:57 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+14:58:07 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+14:58:22 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+15:08:19 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+15:08:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+15:08:46 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+15:09:43 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+15:11:08 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+15:12:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+15:13:07 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+15:13:58 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+15:15:35 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+22:54:31 **** Build of configuration Debug for project 01 ****
+make all 
+Building file: ../src/01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01.d" -MT"src/01.o" -o "src/01.o" "../src/01.cpp"
+../src/01.cpp: In function ‘int main()’:
+../src/01.cpp:301:16: warning: format ‘%[^
+   ’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
+  301 |     scanf(" %[^\n]s",&degrees);
+      |             ~~~^~    ~~~~~~~~
+      |                |     |
+      |                char* char (*)[20]
+Finished building: ../src/01.cpp
+ 
+Building target: 01
+Invoking: GCC C++ Linker
+g++  -o "01"  ./src/01.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o   
+Finished building target: 01
+ 
+22:54:48 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:56:21 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+22:56:40 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+make: Nothing to be done for 'all'.
+23:21:37 **** Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:34:6: warning: unused variable ‘cycle’ [-Wunused-variable]
+   34 |  int cycle = 1 ;
+      |      ^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:24:18 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:24:28 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:26:24 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:28:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:31:06 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:31:25 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:31:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:31 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:32 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:33 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:34 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:35 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:37 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:38 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:39 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:40 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:43 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:45 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:47 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:49 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:50 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:31:51 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+23:33:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+23:36:27 **** Incremental Build of configuration Debug for project 01 ****
+make all 
+Building file: ../src/01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01.d" -MT"src/01.o" -o "src/01.o" "../src/01.cpp"
+../src/01.cpp: In function ‘int main()’:
+../src/01.cpp:301:16: warning: format ‘%[^
+   ’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
+  301 |     scanf(" %[^\n]s",&degrees);
+      |             ~~~^~    ~~~~~~~~
+      |                |     |
+      |                char* char (*)[20]
+Finished building: ../src/01.cpp
+ 
+Building target: 01
+Invoking: GCC C++ Linker
+g++  -o "01"  ./src/01.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o   
+Finished building target: 01
+ 
+07:16:48 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+07:17:20 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:52:2: error: expected unqualified-id before ‘return’
+   52 |  return 0 ;
+      |  ^~~~~~
+../src/main.cpp:53:1: error: expected declaration before ‘}’ token
+   53 | }
+      | ^
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+07:17:38 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:34:6: warning: unused variable ‘cycle’ [-Wunused-variable]
+   34 |  int cycle = 1 ;
+      |      ^~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:52:2: error: expected unqualified-id before ‘return’
+   52 |  return 0 ;
+      |  ^~~~~~
+../src/main.cpp:53:1: error: expected declaration before ‘}’ token
+   53 | }
+      | ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+07:17:55 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:34:6: warning: unused variable ‘cycle’ [-Wunused-variable]
+   34 |  int cycle = 1 ;
+      |      ^~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:49:2: error: expected declaration before ‘}’ token
+   49 |  }
+      |  ^
+../src/main.cpp:53:2: error: expected unqualified-id before ‘return’
+   53 |  return 0 ;
+      |  ^~~~~~
+../src/main.cpp:54:1: error: expected declaration before ‘}’ token
+   54 | }
+      | ^
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+07:18:00 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:34:6: warning: unused variable ‘cycle’ [-Wunused-variable]
+   34 |  int cycle = 1 ;
+      |      ^~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:53:2: error: expected unqualified-id before ‘return’
+   53 |  return 0 ;
+      |  ^~~~~~
+../src/main.cpp:54:1: error: expected declaration before ‘}’ token
+   54 | }
+      | ^
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+07:18:06 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:34:6: warning: unused variable ‘cycle’ [-Wunused-variable]
+   34 |  int cycle = 1 ;
+      |      ^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:19:26 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:20:46 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:20:52 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+07:24:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:25:07 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:25:17 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:28:05 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:28:15 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:30:26 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:30:33 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+07:32:13 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:32:30 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:32:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:33:56 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:34:08 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+07:35:28 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+07:37:25 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 

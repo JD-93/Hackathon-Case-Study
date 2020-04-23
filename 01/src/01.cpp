@@ -52,7 +52,7 @@ int main()
 				{
 					cout<<"Log in as student : \n" ;
 					string formno,name ;
-					cout<<"\nform no : ";
+					cout<<"\n form no : ";
 					cin>>formno ;
 					cout<<"name : " ;
 					cin>>name ;

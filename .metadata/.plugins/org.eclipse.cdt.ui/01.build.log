@@ -1,6 +1,22 @@
-13:10:17 **** Incremental Build of configuration Debug for project 01 ****
+23:36:27 **** Incremental Build of configuration Debug for project 01 ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01.d" -MT"src/01.o" -o "src/01.o" "../src/01.cpp"
+../src/01.cpp: In function ‘int main()’:
+../src/01.cpp:301:16: warning: format ‘%[^
+   ’ expects argument of type ‘char*’, but argument 2 has type ‘char (*)[20]’ [-Wformat=]
+  301 |     scanf(" %[^\n]s",&degrees);
+      |             ~~~^~    ~~~~~~~~
+      |                |     |
+      |                char* char (*)[20]
+Finished building: ../src/01.cpp
+ 
+Building target: 01
+Invoking: GCC C++ Linker
+g++  -o "01"  ./src/01.o ./src/capacities.o ./src/center.o ./src/course.o ./src/eligibility.o ./src/preferences.o ./src/students.o   
+Finished building target: 01
+ 
 
-13:10:18 Build Finished. 0 errors, 0 warnings. (took 79ms)
+23:36:31 Build Finished. 0 errors, 1 warnings. (took 3s.642ms)
 

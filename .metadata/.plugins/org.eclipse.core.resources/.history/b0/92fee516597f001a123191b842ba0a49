@@ -1,3 +1,0 @@
-src/students.o: ../src/students.cpp ../src/students.h
-
-../src/students.h:
