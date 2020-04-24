@@ -4637,3 +4637,15 @@ Invoking: GCC C++ Linker
 g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
+13:23:57 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
