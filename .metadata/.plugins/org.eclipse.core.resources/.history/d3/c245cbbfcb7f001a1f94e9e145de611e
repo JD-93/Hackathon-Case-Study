@@ -1,3 +1,0 @@
-src/center.o: ../src/center.cpp ../src/center.h
-
-../src/center.h:

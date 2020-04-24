@@ -4721,3 +4721,1262 @@ Invoking: GCC C++ Linker
 g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
 Finished building target: as per lectures
  
+18:00:22 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+18:07:12 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:80:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   80 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_A) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:80:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   80 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_A) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:81:33: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   81 |    for (size_t i=0 ; i<Add_Syst.students1.size() ; i++ ){
+      |                                 ^~~~~~~~~
+      |                                 students
+../src/main.cpp:82:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   82 |     if (Add_Syst.students1[i].rank_A != "-1" ){
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:83:35: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   83 |      for (size_t j=0 ; j<Add_Syst.students1[i].stu_pref.size() ; j++ ){
+      |                                   ^~~~~~~~~
+      |                                   students
+../src/main.cpp:84:20: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   84 |       if (Add_Syst.students1[i].stu_pref[j].pref_no == to_string(cycle)){
+      |                    ^~~~~~~~~
+      |                    students
+../src/main.cpp:86:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   86 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:87:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   87 |         if (Add_Syst.courses1[k].ccat_section == "A"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:88:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   88 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:88:59: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   88 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                                                           ^~~~~~~~~
+      |                                                           students
+../src/main.cpp:89:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   89 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:90:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   90 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:91:40: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   91 |            if (itr->second == Add_Syst.students1[i].stu_pref[j].center_id){
+      |                                        ^~~~~~~~~
+      |                                        students
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:95:23: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   95 |              Add_Syst.students1[i].display_with_preferences() ;
+      |                       ^~~~~~~~~
+      |                       students
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:115:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  115 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_A) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:115:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  115 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_A) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:119:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  119 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:119:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  119 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:120:33: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  120 |    for (size_t i=0 ; i<Add_Syst.students1.size() ; i++ ){
+      |                                 ^~~~~~~~~
+      |                                 students
+../src/main.cpp:121:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  121 |     if (Add_Syst.students1[i].rank_B != "-1" ){
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:122:35: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  122 |      for (size_t j=0 ; j<Add_Syst.students1[i].stu_pref.size() ; j++ ){
+      |                                   ^~~~~~~~~
+      |                                   students
+../src/main.cpp:123:20: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  123 |       if (Add_Syst.students1[i].stu_pref[j].pref_no == to_string(cycle)){
+      |                    ^~~~~~~~~
+      |                    students
+../src/main.cpp:125:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  125 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:126:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  126 |         if (Add_Syst.courses1[k].ccat_section == "B"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:127:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  127 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:127:59: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  127 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                                                           ^~~~~~~~~
+      |                                                           students
+../src/main.cpp:128:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  128 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:129:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  129 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:130:40: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  130 |            if (itr->second == Add_Syst.students1[i].stu_pref[j].center_id){
+      |                                        ^~~~~~~~~
+      |                                        students
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:134:23: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  134 |              Add_Syst.students1[i].display_with_preferences() ;
+      |                       ^~~~~~~~~
+      |                       students
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:154:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  154 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:154:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  154 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:160:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  160 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:160:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  160 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:161:33: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  161 |    for (size_t i=0 ; i<Add_Syst.students1.size() ; i++ ){
+      |                                 ^~~~~~~~~
+      |                                 students
+../src/main.cpp:162:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  162 |     if (Add_Syst.students1[i].rank_C != "-1" ){
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:163:35: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  163 |      for (size_t j=0 ; j<Add_Syst.students1[i].stu_pref.size() ; j++ ){
+      |                                   ^~~~~~~~~
+      |                                   students
+../src/main.cpp:164:20: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  164 |       if (Add_Syst.students1[i].stu_pref[j].pref_no == to_string(cycle)){
+      |                    ^~~~~~~~~
+      |                    students
+../src/main.cpp:166:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  166 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:167:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  167 |         if (Add_Syst.courses1[k].ccat_section == "C"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:168:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  168 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:168:59: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  168 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                                                           ^~~~~~~~~
+      |                                                           students
+../src/main.cpp:169:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  169 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:170:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  170 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:171:40: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  171 |            if (itr->second == Add_Syst.students1[i].stu_pref[j].center_id){
+      |                                        ^~~~~~~~~
+      |                                        students
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:175:23: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  175 |              Add_Syst.students1[i].display_with_preferences() ;
+      |                       ^~~~~~~~~
+      |                       students
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:195:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  195 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:195:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  195 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:07:40 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:81:33: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   81 |    for (size_t i=0 ; i<Add_Syst.students1.size() ; i++ ){
+      |                                 ^~~~~~~~~
+      |                                 students
+../src/main.cpp:82:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   82 |     if (Add_Syst.students1[i].rank_A != "-1" ){
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:83:35: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   83 |      for (size_t j=0 ; j<Add_Syst.students1[i].stu_pref.size() ; j++ ){
+      |                                   ^~~~~~~~~
+      |                                   students
+../src/main.cpp:84:20: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   84 |       if (Add_Syst.students1[i].stu_pref[j].pref_no == to_string(cycle)){
+      |                    ^~~~~~~~~
+      |                    students
+../src/main.cpp:86:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   86 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:87:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   87 |         if (Add_Syst.courses1[k].ccat_section == "A"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:88:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   88 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:88:59: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   88 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                                                           ^~~~~~~~~
+      |                                                           students
+../src/main.cpp:89:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   89 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:90:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   90 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:91:40: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   91 |            if (itr->second == Add_Syst.students1[i].stu_pref[j].center_id){
+      |                                        ^~~~~~~~~
+      |                                        students
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:95:23: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+   95 |              Add_Syst.students1[i].display_with_preferences() ;
+      |                       ^~~~~~~~~
+      |                       students
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:115:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  115 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_A) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:115:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  115 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_A) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:119:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  119 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:119:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  119 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:120:33: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  120 |    for (size_t i=0 ; i<Add_Syst.students1.size() ; i++ ){
+      |                                 ^~~~~~~~~
+      |                                 students
+../src/main.cpp:121:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  121 |     if (Add_Syst.students1[i].rank_B != "-1" ){
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:122:35: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  122 |      for (size_t j=0 ; j<Add_Syst.students1[i].stu_pref.size() ; j++ ){
+      |                                   ^~~~~~~~~
+      |                                   students
+../src/main.cpp:123:20: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  123 |       if (Add_Syst.students1[i].stu_pref[j].pref_no == to_string(cycle)){
+      |                    ^~~~~~~~~
+      |                    students
+../src/main.cpp:125:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  125 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:126:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  126 |         if (Add_Syst.courses1[k].ccat_section == "B"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:127:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  127 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:127:59: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  127 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                                                           ^~~~~~~~~
+      |                                                           students
+../src/main.cpp:128:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  128 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:129:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  129 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:130:40: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  130 |            if (itr->second == Add_Syst.students1[i].stu_pref[j].center_id){
+      |                                        ^~~~~~~~~
+      |                                        students
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:134:23: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  134 |              Add_Syst.students1[i].display_with_preferences() ;
+      |                       ^~~~~~~~~
+      |                       students
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:154:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  154 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:154:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  154 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_B) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:160:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  160 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:160:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  160 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+../src/main.cpp:161:33: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  161 |    for (size_t i=0 ; i<Add_Syst.students1.size() ; i++ ){
+      |                                 ^~~~~~~~~
+      |                                 students
+../src/main.cpp:162:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  162 |     if (Add_Syst.students1[i].rank_C != "-1" ){
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:163:35: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  163 |      for (size_t j=0 ; j<Add_Syst.students1[i].stu_pref.size() ; j++ ){
+      |                                   ^~~~~~~~~
+      |                                   students
+../src/main.cpp:164:20: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  164 |       if (Add_Syst.students1[i].stu_pref[j].pref_no == to_string(cycle)){
+      |                    ^~~~~~~~~
+      |                    students
+../src/main.cpp:166:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  166 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:167:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  167 |         if (Add_Syst.courses1[k].ccat_section == "C"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:168:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  168 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:168:59: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  168 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students1[i].stu_pref[j].course_name ){
+      |                                                           ^~~~~~~~~
+      |                                                           students
+../src/main.cpp:169:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  169 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:170:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  170 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:171:40: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  171 |            if (itr->second == Add_Syst.students1[i].stu_pref[j].center_id){
+      |                                        ^~~~~~~~~
+      |                                        students
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:175:23: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  175 |              Add_Syst.students1[i].display_with_preferences() ;
+      |                       ^~~~~~~~~
+      |                       students
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:195:18: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  195 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                  ^~~~~~~~~
+      |                  students
+../src/main.cpp:195:45: error: ‘class Admission_System’ has no member named ‘students1’; did you mean ‘students’?
+  195 |    sort(Add_Syst.students1.begin(),Add_Syst.students1.end(),Add_Syst.sort_by_C) ;
+      |                                             ^~~~~~~~~
+      |                                             students
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:08:53 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:86:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   86 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:87:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   87 |         if (Add_Syst.courses1[k].ccat_section == "A"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:88:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   88 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:89:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   89 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:90:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+   90 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:125:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  125 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:126:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  126 |         if (Add_Syst.courses1[k].ccat_section == "B"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:127:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  127 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:128:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  128 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:129:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  129 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:166:37: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  166 |        for (size_t k=0 ; k<Add_Syst.courses1.size() ; k++ ){
+      |                                     ^~~~~~~~
+      |                                     courses
+../src/main.cpp:167:22: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  167 |         if (Add_Syst.courses1[k].ccat_section == "C"){
+      |                      ^~~~~~~~
+      |                      courses
+../src/main.cpp:168:23: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  168 |          if (Add_Syst.courses1[k].course_name == Add_Syst.students[i].stu_pref[j].course_name ){
+      |                       ^~~~~~~~
+      |                       courses
+../src/main.cpp:169:52: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  169 |           map<int,string>::iterator itr = Add_Syst.courses1[k].course_map.begin() ;
+      |                                                    ^~~~~~~~
+      |                                                    courses
+../src/main.cpp:170:33: error: ‘class Admission_System’ has no member named ‘courses1’; did you mean ‘courses’?
+  170 |           while(itr != Add_Syst.courses1[k].course_map.end()) {
+      |                                 ^~~~~~~~
+      |                                 courses
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:09:12 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:09:27 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   92 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:93:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+   93 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:131:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  131 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:132:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  132 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:135:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  135 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:139:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  139 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:172:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  172 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:173:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  173 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:176:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  176 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:180:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  180 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:13:21 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:131:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  131 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:132:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  132 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:135:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  135 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:139:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  139 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:172:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  172 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:173:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  173 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:176:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  176 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:180:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  180 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:13:23 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+Building file: ../src/demo class work 02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo class work 02.d" -MT"src/demo\ class\ work\ 02.d" -o "src/demo class work 02.o" "../src/demo class work 02.cpp"
+Finished building: ../src/demo class work 02.cpp
+ 
+Building target: demo class work 02
+Invoking: GCC C++ Linker
+g++  -o "demo class work 02"  ./src/demo\ class\ work\ 02.o   
+Finished building target: demo class work 02
+ 
+18:13:52 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:13:53 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+18:14:10 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:14:10 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+18:14:36 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:172:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  172 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:173:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  173 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:14:36 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+18:14:41 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   92 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:93:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   93 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:96:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+   96 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:100:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  100 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:131:26: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  131 |             if (Add_Syst.capacities1[itr->first].filled_capacity !=
+      |                          ^~~~~~~~~~~
+      |                          capacities
+../src/main.cpp:132:24: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  132 |               Add_Syst.capacities1[itr->first].max_capacity){
+      |                        ^~~~~~~~~~~
+      |                        capacities
+../src/main.cpp:135:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  135 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:139:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  139 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+../src/main.cpp:176:38: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  176 |              string  temp = Add_Syst.capacities1[itr->first].filled_capacity;
+      |                                      ^~~~~~~~~~~
+      |                                      capacities
+../src/main.cpp:180:23: error: ‘class Admission_System’ has no member named ‘capacities1’; did you mean ‘capacities’?
+  180 |              Add_Syst.capacities1[itr->first].filled_capacity= to_string(my_int) ;
+      |                       ^~~~~~~~~~~
+      |                       capacities
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:15:34 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   92 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:93:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+   93 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:131:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  131 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:132:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  132 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:135:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  135 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:139:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  139 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:180:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  180 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:15:35 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:37 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   92 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:93:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+   93 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:131:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  131 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:132:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  132 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:135:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  135 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:139:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  139 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:180:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  180 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:15:45 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   92 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:93:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+   93 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:131:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  131 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:132:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  132 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:135:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  135 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:139:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  139 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:15:46 **** Incremental Build of configuration Debug for project demo class work 02 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:50 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   92 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:93:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+   93 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+../src/main.cpp:131:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  131 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:132:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+  132 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:135:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  135 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:139:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  139 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:16:24 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:92:49: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   92 |             if (Add_Syst.capacities[itr->first].filled_capacity !=
+      |                                                 ^~~~~~~~~~~~~~~
+      |                                                 filled_cap
+../src/main.cpp:93:47: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘max_capacity’; did you mean ‘capacity’?
+   93 |               Add_Syst.capacities[itr->first].max_capacity){
+      |                                               ^~~~~~~~~~~~
+      |                                               capacity
+../src/main.cpp:96:61: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+   96 |              string  temp = Add_Syst.capacities[itr->first].filled_capacity;
+      |                                                             ^~~~~~~~~~~~~~~
+      |                                                             filled_cap
+../src/main.cpp:100:46: error: ‘__gnu_cxx::__alloc_traits<std::allocator<capacity>, capacity>::value_type’ {aka ‘class capacity’} has no member named ‘filled_capacity’; did you mean ‘filled_cap’?
+  100 |              Add_Syst.capacities[itr->first].filled_capacity= to_string(my_int) ;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              filled_cap
+make: *** [src/main.o] Error 1
+src/subdir.mk:42: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:16:43 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+18:17:49 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
+18:18:51 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+18:19:17 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: as per lectures
+Invoking: GCC C++ Linker
+g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center.o ./src/course.o ./src/degree.o ./src/eligibility.o ./src/main.o ./src/preference.o ./src/student.o   
+Finished building target: as per lectures
+ 
+18:19:45 **** Incremental Build of configuration Debug for project as per lectures ****
+make all 
+make: Nothing to be done for 'all'.
