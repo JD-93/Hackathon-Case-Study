@@ -1,4 +1,4 @@
-13:23:57 **** Incremental Build of configuration Debug for project as per lectures ****
+14:12:16 **** Incremental Build of configuration Debug for project as per lectures ****
 make all 
 Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "as per lectures"  ./src/AdmissionSystem.o ./src/capacity.o ./src/center
 Finished building target: as per lectures
  
 
-13:24:03 Build Finished. 0 errors, 0 warnings. (took 5s.917ms)
+14:12:17 Build Finished. 0 errors, 0 warnings. (took 1s.190ms)
 

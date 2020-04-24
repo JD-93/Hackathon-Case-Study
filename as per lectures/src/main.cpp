@@ -49,11 +49,15 @@ int main() {
 												Add_Syst.capacities[itr->first].max_cap){
 
 											Add_Syst.students[i].display_with_preferences() ;
+
+												/* just to increment counter of capacity pf cente  */
 											string  temp = Add_Syst.capacities[itr->first].filled_cap;
 											if (temp == "NA")  temp = "0" ;
 											int my_int = stoi(temp) ;
 											my_int++ ;
 											Add_Syst.capacities[itr->first].filled_cap = to_string(my_int) ;
+
+
 										}
 									}
 									itr++ ;
